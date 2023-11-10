@@ -56,7 +56,6 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-.btn__partner{
-@include btn-green()
-}
+        .btn__partner{
+        @include btn-green()
+        }
