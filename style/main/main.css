@@ -1,17 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;600;700&display=swap");
 body {
   width: 100%;
+  box-sizing: border-box;
 }
 
 .btn {
-  max-width: 220px;
+  max-width: 250px;
   width: 100%;
-  height: 100%;
+  height: 70px;
   border-radius: 16px;
-  padding: 1.5em;
   font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
+  text-align: center;
   border: none;
   color: white;
   cursor: pointer;
@@ -39,4 +40,17 @@ p {
   font-family: "Inter", sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
+}
+
+.grbuttons {
+  width: 80%;
+  margin: auto;
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn__partner {
+  background-color: rgb(52, 129, 132);
 }/*# sourceMappingURL=main.css.map */
