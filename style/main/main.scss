@@ -57,5 +57,38 @@ p {
     justify-content: space-around;
     align-items: center;
         .btn__partner{
-        @include btn-green()
+        @include btn-orange()
         }
+        .btn__valanter{
+            @include btn-green()
+        }
+        .btn__lease{
+            @include btn-red()
+        }
+    }
+    .smi{
+        background-image: url(/assets/img/background2.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 90vh;
+        text-align: center;
+        .smi__container{
+            width: 80%;
+            padding-top: 7%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+          border: 1px solid;
+        }
+        .smi__figure{
+            border: 1px solid;
+            width: 25%;
+            height: fit-content;
+            .smi__figure-img{
+                width: 100%;
+                height: auto;
+                margin-bottom: 5%;
+            }
+        }
+    }
+
