@@ -84,7 +84,7 @@ a {
 }
 .intro {
     width: 90%;
-    height: 50vh;
+    min-height: 70vh;
     background-image: url('/assets/main/main.png');
     background-size: cover;
     margin: 2% auto;
