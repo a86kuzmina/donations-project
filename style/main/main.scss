@@ -10,7 +10,12 @@ $Font2: 'Inter', sans-serif;
 }
 @mixin btn-green {
     background-color: rgb(52, 129, 132);
-}   
+}  
+@mixin btn-white {
+    background-color: white;
+    color: #CC5078;
+    border: 2px solid #CC5078;
+} 
 
 body {
     width: 100%;
@@ -57,6 +62,78 @@ p {
     font-family: $Font2;
     font-size: 1.2rem;
     font-weight: 400;
+}
+a {
+    text-decoration: none;
+}
+
+.header {
+    height: 10vh;
+    margin: 2% auto;
+    font-family: $Font1;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(202, 207, 206);
+    .header__menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+        padding-right: 5%;
+    }
+    .menu__pic {
+        padding-left: 5%;
+    }
+    .menu__link {
+        padding-left: 5%;
+        color: black;
+    }
+    .menu__link-tel {
+        padding-left: 0;
+    }
+}
+.intro {
+    width: 90%;
+    min-height: 70vh;
+    background-image: url('/assets/main/main.png');
+    background-size: cover;
+    margin: 2% auto;
+    .intro__title {
+        padding: 10% 0;
+    }
+
+    .intro__btn {
+        padding: 0 0 5% 7%;
+    }
+    .intro__btn-want {
+        @include btn-green
+    }
+    .intro__btn-need {
+        @include btn-white;
+    }
+}
+.objective {
+    width: 90%;
+    height: 50vh;
+    margin: 2% auto;
+    display: flex;
+    .objective__img {
+        width: 50%;
+        .objective__pic {
+            width: 100%;
+        }
+    }
+    .objective__info {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        line-height: 1.5rem;
+    }
+    .objective__btn {
+        @include btn-green;
+    }
 }
 .grbuttons{
     width: 90%;

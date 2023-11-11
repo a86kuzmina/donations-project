@@ -1,17 +1,64 @@
 <!DOCTYPE html>
-<html lang="rus">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/reset200802.css" />
     <link rel="stylesheet" href="./style/main/main.css" />
     <title>Вещь во благо</title>
-    <link rel="icon" type="image" href="./assets/img/clothes_7417849.png" />
+    <link rel="icon" href="./assets/img/clothes_7417849.png" />
   </head>
   <body>
-    <header></header>
-      <main>
-        <div class="grbuttons">
+    <header class="header">
+      <nav class="header__menu menu">
+        <a href="#" class="menu__link">О нас</a>
+        <a href="#" class="menu__link">Адреса контейнеров</a>
+        <a href="#" class="menu__link">Магазин</a>
+        <a href="#" class="menu__link">Форма вывоза</a>
+        <img src="./assets/main/phone-call.png" class="menu__pic" alt="phone" />
+        <a href="tel:+7(903)046-95-13" class="menu__link menu__link-tel"
+          >+7(903)046-95-13</a
+        >
+      </nav>
+    </header>
+    <main>
+      <div class="intro">
+        <h1 class="intro__title">"Вещь во благо"</h1>
+        <div class="intro__btn">
+          <button class="intro__btn-want btn" type="button">Хочу помочь</button>
+        </div>
+        <div class="intro__btn">
+          <button class="intro__btn-need btn" type="button">
+            Нужна помощь
+          </button>
+        </div>
+      </div>
+      <div class="objective">
+        <div class="objective__img">
+          <img
+            src="/assets/main/people-container.jpg"
+            class="objective__pic"
+            alt="people"
+          />
+        </div>
+
+        <div class="objective__info">
+          <h2 class="objective__info-title">Цель проекта</h2>
+          <p class="objective__info-txt">
+            "Любая вещь во благо" - это экологический проект ведущий
+            социально-благотворительную деятельность. Проект создает удобную
+            городскую инфраструктуру для сбора текстиля бывшего в употреблении,
+            возвращая его на повторное использование или переработку. Цель
+            проекта - улучшить экологию региона, сократив объем вывоза
+            текстильных отходов на мусорные полигоны.
+          </p>
+          <button class="objective__btn btn" type="button">
+            Узнать больше
+          </button>
+        </div>
+      </div>
+      
+       <div class="grbuttons">
           <button type="button" class="btn btn__partner">Стать партнером</button>
           <button type="button" class="btn btn__valanter">Стать валантером</button>
           <button type="button" class="btn btn__lease">Арендовать контейнер</button>
