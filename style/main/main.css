@@ -1,20 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@400;600;700&display=swap");
 body {
   width: 100%;
+  box-sizing: border-box;
 }
 
 .btn {
   max-width: 250px;
   width: 100%;
   height: 70px;
-  text-align: center;
   border-radius: 16px;
   font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 700;
+  text-align: center;
   border: none;
   color: white;
   cursor: pointer;
+}
+
+.link {
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+}
+
+.link:hover {
+  color: rgb(52, 129, 132);
+  font-weight: bold;
 }
 
 h1 {
@@ -40,7 +52,6 @@ p {
   font-size: 1.2rem;
   font-weight: 400;
 }
-
 a {
   text-decoration: none;
 }
@@ -115,4 +126,66 @@ a {
 }
 .objective .objective__btn {
   background-color: rgb(52, 129, 132);
+}
+.grbuttons {
+  width: 90%;
+  margin: auto;
+  height: 40vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.grbuttons .btn__partner {
+  background-color: rgb(209, 111, 66);
+}
+.grbuttons .btn__valanter {
+  background-color: rgb(52, 129, 132);
+}
+.grbuttons .btn__lease {
+  background-color: rgb(246, 124, 135);
+}
+
+.smi {
+  background-image: url(/assets/img/background2.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  text-align: center;
+}
+.smi .smi__container {
+  width: 90%;
+  height: 70vh;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+.smi .smi__figure {
+  background-color: rgba(205, 228, 229, 0.3);
+  border-radius: 10%;
+  min-width: 250px;
+  width: 24%;
+  height: 370px;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 1%;
+}
+.smi .smi__figure .smi__figure-img {
+  border-top-right-radius: 10%;
+  border-top-left-radius: 10%;
+  width: 100%;
+  height: 200x;
+  margin-bottom: 6%;
+}
+.smi .smi__figure .smi__figuraption-title {
+  text-align: center;
+  text-decoration: underline;
+}
+.smi .smi__figure .smi__figuraption-text {
+  margin-top: 4%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 1rem;
 }/*# sourceMappingURL=main.css.map */
