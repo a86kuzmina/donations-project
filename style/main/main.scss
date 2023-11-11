@@ -21,6 +21,11 @@ body {
     width: 100%;
     box-sizing: border-box;
 }
+.btn__social{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
 .btn {
     max-width: 250px;
     width: 100%;
@@ -145,22 +150,41 @@ a {
         .btn__partner{
         @include btn-orange()
         }
+        .btn__partner:hover{
+            background-color: transparent;
+            color: rgb(209, 111, 66);
+            border: 2px solid rgb(209, 111, 66);
+        }
         .btn__valanter{
             @include btn-green()
         }
+        .btn__valanter:hover{
+            background-color: transparent;
+            color: rgb(52, 129, 132);
+            border: 2px solid rgb(52, 129, 132);;
+        }
         .btn__lease{
             @include btn-red()
+        }
+        .btn__lease:hover{
+            background-color: transparent;
+            color: rgb(246, 124, 135);
+            border: 2px solid rgb(246, 124, 135);;
         }
     }
     .smi{
         background-image: url(/assets/img/background2.jpg);
         background-size: cover;
         width: 100%;
-        height: 90vh;
+        min-height: 90vh;
+        height: fit-content;
         text-align: center;
+        margin-bottom: 5%;
+        margin-top: 2%;
         .smi__container{
+            padding: 5% 0%;
             width: 90%;
-            height: 70vh;
+            height: fit-content;
             margin: auto;
             display: flex;
             flex-wrap: wrap;
@@ -193,6 +217,68 @@ a {
                 text-align:center;
                 font-size: 1rem;
             }
+            .smi__link{
+                text-decoration: underline;
+            }
         }
     }
+    .map__container{
+        width: 90%;
+        margin: auto;
+        display:flex ;
+        flex-wrap: wrap;
+        height: fit-content;
+        gap:55px;
+        #city-select{
+            padding: 5px;
+            @include btn-green();
+            height: 50px;
+            width: 150px;
+            color: white;
+        }    
+    }
+    .footer{
+        border-top: 1px solid rgb(202, 207, 206);
+        margin-top: 5%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        .footer__container{
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .footer__title{
+                width: 100%;
+            text-align: center;
+            font-style: inherit;
+            }
+            .footer__content{
+                display: flex;
+                flex-direction: column;
+                gap:15px;
+            .icon{
+                margin-left: 5%;
+                width: 40px;
+                height: 40px;
+    }
+            .privacy-policy{
+                align-self: flex-end;
+                color: gray;
+                font-size: 1rem;
+                text-decoration: none;
+            }
+            .privacy-policy:hover{
+                text-decoration: underline;
+            }
+        }
+            .footer__contati{
+                gap: 5px;
+                flex-wrap: wrap;
+                .adress{
+                    font-size: 1rem;
 
+                }
+            }
+    }
+}
