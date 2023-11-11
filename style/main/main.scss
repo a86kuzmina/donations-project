@@ -29,6 +29,15 @@ body {
     color: white;
     cursor: pointer;
 }
+.link{
+    color: black;
+    font-family: $Font2;
+    font-size: 1.1rem;
+}
+.link:hover{
+    color: rgb(52, 129, 132);
+    font-weight: bold;
+}
 h1 {
     font-family: $Font1;
     font-size: 4rem;
@@ -50,7 +59,7 @@ p {
     font-weight: 400;
 }
 .grbuttons{
-    width: 80%;
+    width: 90%;
     margin: auto;
     height: 40vh;
     display: flex;
@@ -73,21 +82,39 @@ p {
         height: 90vh;
         text-align: center;
         .smi__container{
-            width: 80%;
-            padding-top: 7%;
+            width: 90%;
+            height: 70vh;
             margin: auto;
             display: flex;
             flex-wrap: wrap;
-          border: 1px solid;
+            justify-content: center;
+            gap:5px;
+            align-items: center;
         }
         .smi__figure{
-            border: 1px solid;
-            width: 25%;
+            background-color: rgba(205, 228, 229, 0.3);
+            border-radius: 10%;
+            min-width: 250px;
+            width: 24%;
+            height: 370px;
             height: fit-content;
+            padding: 1%;
             .smi__figure-img{
+                border-top-right-radius:10% ;
+                border-top-left-radius:10% ;
                 width: 100%;
-                height: auto;
+                height: 200x;
+                margin-bottom: 6%;
+            }
+            .smi__figuraption-title{
+                text-align:center;
+                text-decoration:underline;
+            }
+            .smi__figuraption-text{
+                margin-top: 4%;
                 margin-bottom: 5%;
+                text-align:center;
+                font-size: 1rem;
             }
         }
     }
