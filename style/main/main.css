@@ -4,6 +4,12 @@ body {
   box-sizing: border-box;
 }
 
+.btn__social {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 .btn {
   max-width: 250px;
   width: 100%;
@@ -52,6 +58,7 @@ p {
   font-size: 1.2rem;
   font-weight: 400;
 }
+
 a {
   text-decoration: none;
 }
@@ -127,6 +134,7 @@ a {
 .objective .objective__btn {
   background-color: rgb(52, 129, 132);
 }
+
 .grbuttons {
   width: 90%;
   margin: auto;
@@ -138,23 +146,44 @@ a {
 .grbuttons .btn__partner {
   background-color: rgb(209, 111, 66);
 }
+.grbuttons .btn__partner:hover {
+  background-color: transparent;
+  color: rgb(209, 111, 66);
+  border: 2px solid rgb(209, 111, 66);
+}
 .grbuttons .btn__valanter {
   background-color: rgb(52, 129, 132);
 }
+.grbuttons .btn__valanter:hover {
+  background-color: transparent;
+  color: rgb(52, 129, 132);
+  border: 2px solid rgb(52, 129, 132);
+}
 .grbuttons .btn__lease {
   background-color: rgb(246, 124, 135);
+}
+.grbuttons .btn__lease:hover {
+  background-color: transparent;
+  color: rgb(246, 124, 135);
+  border: 2px solid rgb(246, 124, 135);
 }
 
 .smi {
   background-image: url(/assets/img/background2.jpg);
   background-size: cover;
   width: 100%;
-  height: 90vh;
+  min-height: 90vh;
+  height: -moz-fit-content;
+  height: fit-content;
   text-align: center;
+  margin-bottom: 5%;
+  margin-top: 2%;
 }
 .smi .smi__container {
+  padding: 5% 0%;
   width: 90%;
-  height: 70vh;
+  height: -moz-fit-content;
+  height: fit-content;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -187,5 +216,70 @@ a {
   margin-top: 4%;
   margin-bottom: 5%;
   text-align: center;
+  font-size: 1rem;
+}
+.smi .smi__figure .smi__link {
+  text-decoration: underline;
+}
+
+.map__container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 55px;
+}
+.map__container #city-select {
+  padding: 5px;
+  background-color: rgb(52, 129, 132);
+  height: 50px;
+  width: 150px;
+  color: white;
+}
+
+.footer {
+  border-top: 1px solid rgb(202, 207, 206);
+  margin-top: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.footer .footer__container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer .footer__container .footer__title {
+  width: 100%;
+  text-align: center;
+  font-style: inherit;
+}
+.footer .footer__container .footer__content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer .footer__container .footer__content .icon {
+  margin-left: 5%;
+  width: 40px;
+  height: 40px;
+}
+.footer .footer__container .footer__content .privacy-policy {
+  align-self: flex-end;
+  color: gray;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.footer .footer__container .footer__content .privacy-policy:hover {
+  text-decoration: underline;
+}
+.footer .footer__container .footer__contati {
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.footer .footer__container .footer__contati .adress {
   font-size: 1rem;
 }/*# sourceMappingURL=main.css.map */
