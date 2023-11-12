@@ -163,6 +163,7 @@ a {
   max-height: fit-content;
   background-image: url("/assets/main/12178789_4907879.svg");
   background-size: cover;
+  background-position-x: left;
   margin: 2% auto;
 }
 @media (max-width: 768px) {
