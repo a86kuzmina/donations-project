@@ -21,7 +21,7 @@
         <a href="#" class="menu__link">О нас</a>
         <a href="#" class="menu__link">Адреса контейнеров</a>
         <a href="#" class="menu__link">Магазин</a>
-        <a href="#" class="menu__link">Форма вывоза</a>
+        <a href="#" id="export" class="menu__link">Форма вывоза</a>
         <img src="./assets/main/phone-call.png" class="menu__pic" alt="phone" />
         <a href="tel:+7(903)046-95-13" class="menu__link menu__link-tel"
           >+7(903)046-95-13</a
@@ -35,7 +35,7 @@
           <button class="intro__btn-want btn" type="button">Хочу помочь</button>
         </div>
         <div class="intro__btn">
-          <button class="intro__btn-need btn" type="button">
+          <button class="intro__btn-need btn"  id="help" type="button">
             Нужна помощь
           </button>
         </div>
@@ -233,6 +233,25 @@
       </div>
     </footer>
 
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img class="modal__img" src="/assets/img/8797376.jpg" alt="img" />
+        <form class="modal__form">
+          <p class="form__text">Как вас зовут?</p>
+          <input type="text" class="form__input" placeholder="Введите ваше имя...">
+          <br>
+          <p class="form__text">Ваш номер телефона?</p>
+          <input type="tel" class="form__input" placeholder="+7(xxx)xxx-xx-xx">
+          <br>
+          <p class="form__text">Опишите, какие вещи вам нужны</p>
+          <textarea class="form__textarea" placeholder="Расскажите подробнее о том, какие вещи вам нужны: размер, сезон, мужские или женские и т.д."></textarea>
+          <br>
+          <button type="submit" class="form__btn btn">Отправить</button>
+          <p class="form__text-link">Нажимая на кнопку вы соглашаетесь на <a class="form__link" href="">обработку персональных данных</a> и соглашаетесь с <a class="form__link" href="">политикой конфиденциальности</a>. </p>
+        </form>
+      </div>
+    </div>
     <script>
       function myInst() {
         window.location.href = "https://www.instagram.com/vesch_vo_blago/";
@@ -240,6 +259,22 @@
       function myVk() {
         window.location.href = "https://vk.com/veschvoblago";
       }
+
+      let modal = document.getElementById("myModal");
+      let btn = document.getElementById("help");
+      let span = document.getElementsByClassName("close")[0];
+      btn.onclick = function(){
+        modal.style.display = "block";
+      }
+      span.onclick = function(){
+        modal.style.display = "none";
+      }
+      window.onclick = function(event){
+        if(event.target == modal){
+          modal.style.display = "none";
+        }
+      }
+
     </script>
   </body>
 </html>
