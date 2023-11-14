@@ -90,10 +90,8 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    min-height: 10vh;
-    height: fit-content;
-    margin: 2% auto;
-    padding-bottom: 2%;
+    height: 10vh;
+    margin: 0 auto;
     font-family: $Font1;
     font-size: 1.2rem;
     font-weight: 600;
@@ -102,11 +100,10 @@ a {
         font-size: .7rem;
     }
     .header__logo {
-        width: 10%;
         margin: 0 auto;
+        height: 60%;
         .header__logo-img {
-            max-width: 100%;
-            max-height: 10vh;
+            height: 100%;
         }
     }
     .header__menu {
@@ -202,7 +199,8 @@ a {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     width: 100%;
-    margin: auto;
+    margin: 5% auto;
+    padding: 1% 0;
     .recycle__production {
         width: 90%;
         margin: 5% auto;
@@ -220,9 +218,16 @@ a {
     margin: 5% auto;
     display: flex;
     .recycle__rags-img {
-        width: 40%;
+        width: 50%;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        @media (max-width: 768px) {
+            width: 40%;
+            :nth-child(-n+2) {
+                display: none;
+            }
+        }
         .recycle__rags-pic {
             max-width: 350px;
             width: 100%;
@@ -230,7 +235,13 @@ a {
             object-fit: cover;
             gap: 0;
             transition: transform .2s;
-        }
+            @media (max-width: 1640px) {
+                max-width: 250px;
+            }
+            @media (max-width: 1170px) {
+                max-width: 200px;
+            }
+            }
         .recycle__rags-pic:hover {
             transform: scale(1.5);
         }
@@ -259,6 +270,12 @@ a {
             object-fit: cover;
             gap: 0;
             transition: transform .2s;
+            @media (max-width: 1640px) {
+                max-width: 250px;
+            }
+            @media (max-width: 1170px) {
+                max-width: 200px;
+            }
         }
         .recycle__fiber-pic:hover {
             transform: scale(1.5);
@@ -272,7 +289,6 @@ a {
         padding-right: 5%;
     }
 }
-
 .recycle__doc{
     width: 90%;
     height: fit-content;
@@ -280,9 +296,14 @@ a {
     display: flex;
     justify-content: space-around;
     .recycle__btn{
-        @include btn-green();
+        @include btn-green;
         width: 50%;
         height: 50px;
+    }
+    .recycle__btn:hover {
+        background-color: transparent;
+        color: rgb(52, 129, 132);
+        border: 2px solid rgb(52, 129, 132);
     }
     .doc__content{
         display: none;
