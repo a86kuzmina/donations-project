@@ -11,21 +11,17 @@
   <body>
     <header class="header">
       <div class="header__logo">
-        <img
-          src="./assets/main/vecteezy_cloth-donate-vector-icon_17355819.jpg"
-          class="header__logo-img"
-          alt="logo"
-        />
+      <a href="/main.html"><img src="./assets/main/vecteezy_cloth-donate-vector-icon_17355819.jpg" class="header__logo-img" alt="logo" /></a>
       </div>
       <nav class="header__menu menu">
-        <a href="#" class="menu__link">О нас</a>
-        <a href="#" class="menu__link">Адреса контейнеров</a>
+        <a href="#info" class="menu__link">О нас</a>
+        <a href="#map" class="menu__link">Адреса контейнеров</a>
         <a href="#" class="menu__link">Магазин</a>
         <a href="#" id="export" class="menu__link">Форма вывоза</a>
+        <a href="/faq.html" class="menu__link">FAQ</a>
         <img src="./assets/main/phone-call.png" class="menu__pic" alt="phone" />
         <a href="tel:+7(903)046-95-13" class="menu__link menu__link-tel"
-          >+7(903)046-95-13</a
-        >
+          >+7(903)046-95-13</a>
       </nav>
     </header>
     <main>
@@ -48,7 +44,7 @@
             alt="people"
           />
         </div>
-        <div class="objective__info">
+        <div id="info" class="objective__info">
           <h2 class="objective__info-title">Цель проекта</h2>
           <p class="objective__info-txt">
             "Любая вещь во благо" - это экологический проект ведущий
@@ -58,7 +54,7 @@
             проекта - улучшить экологию региона, сократив объем вывоза
             текстильных отходов на мусорные полигоны.
           </p>
-          <button class="objective__btn btn" type="button">
+          <button class="objective__btn btn" type="button" onclick="Object()">
             Узнать больше
           </button>
         </div>
@@ -66,10 +62,10 @@
 
       <div class="grbuttons">
         <button type="button" class="btn btn__partner">Стать партнером</button>
-        <button type="button" class="btn btn__valanter">
+        <button type="button" class="btn btn__valanter" onclick="valanter()">
           Стать валантером
         </button>
-        <button type="button" class="btn btn__lease">
+        <button type="button" class="btn btn__lease" onclick="lease()">
           Арендовать контейнер
         </button>
       </div>
@@ -139,13 +135,11 @@
           </figure>
         </div>
       </div>
-      <div class="map">
+      <div id="map" class="map">
         <div class="map__container">
-          <a
-            class="dg-widget-link"
+          <a class="dg-widget-link"
             href="http://2gis.ru/kemerovo/profiles/70000001067875341,70000001022465316,70000001034794658,704215722862998,70000001036409899,704216723117358,704215722774359,704215722754757,70000001020060268,70000001053000236,704215722856890,704215723333713,70000001021000420,70000001019527715,70000001021221451,70000001033596177/center/86.14894866943361,55.36974661834996/zoom/12?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"
-            >Посмотреть на карте Кемерова</a
-          >
+            >Посмотреть на карте Кемерова</a>
           <script
             charset="utf-8"
             src="https://widgets.2gis.com/js/DGWidgetLoader.js"
@@ -179,8 +173,8 @@
           </script>
           <noscript style="color: #c00; font-size: 16px; font-weight: bold"
             >Виджет карты использует JavaScript. Включите его в настройках
-            вашего браузера.</noscript
-          >
+            вашего браузера.</noscript>
+          <div class="map__content">
           <form class="map__form">
             <select name="city" id="city-select">
               <option value="city">Выберите город</option>
@@ -188,6 +182,14 @@
               <option value="novokuznetsk">Новокузнецк</option>
             </select>
           </form>
+<div class="map__content-text">
+  <h4>График работы:</h4>
+  <p class="map__text">Пн - Пт : с 9 до 17:00 (без перерыва)
+    <br>
+    Сб , Вс : выходной.
+  </p>
+</div>
+          </div>
         </div>
       </div>
     </main>
@@ -233,10 +235,34 @@
       </div>
     </footer>
 
+    <div id="modalExp" class="modal">
+      <div class="modal-content">
+        <span class="close__export">&times;</span>
+        <img class="modal__img-exp" src="/assets/main/9649829_7400.jpg" alt="img" />
+        <form class="modal__form">
+          <p class="form__text">Как вас зовут?
+          <br> Наименование организации (если есть):</p>
+          <input type="text" class="form__input" placeholder="Введите ваше имя...">
+          <br>
+          <p class="form__text">Ваш номер телефона?</p>
+          <input type="tel" class="form__input" placeholder="+7(xxx)xxx-xx-xx">
+          <br>
+          <p class="form__text">Ваш адрес?</p>
+          <input type="text" class="form__input" placeholder="г.Кемерово, ул. Ленина, д.75, кв.79">
+          <br>
+          <p class="form__text">Выберите удобную для вас дату и время?</p>
+          <input type="datetime" class="form__input">
+          <br>
+          <button type="submit" class="form__btn btn">Отправить</button>
+          <p class="form__text-link">Нажимая на кнопку вы соглашаетесь на <a class="form__link" href="/assets/docs/Soglasie-novoe.docx">обработку персональных данных</a> и соглашаетесь с <a class="form__link" href="">политикой конфиденциальности</a>. </p>
+        </form>
+      </div>
+    </div>
+
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <img class="modal__img" src="/assets/img/8797376.jpg" alt="img" />
+        <img class="modal__img" src="/assets/main/783704.jpg" alt="img" />
         <form class="modal__form">
           <p class="form__text">Как вас зовут?</p>
           <input type="text" class="form__input" placeholder="Введите ваше имя...">
@@ -248,18 +274,35 @@
           <textarea class="form__textarea" placeholder="Расскажите подробнее о том, какие вещи вам нужны: размер, сезон, мужские или женские и т.д."></textarea>
           <br>
           <button type="submit" class="form__btn btn">Отправить</button>
-          <p class="form__text-link">Нажимая на кнопку вы соглашаетесь на <a class="form__link" href="">обработку персональных данных</a> и соглашаетесь с <a class="form__link" href="">политикой конфиденциальности</a>. </p>
+          <p class="form__text-link">Нажимая на кнопку вы соглашаетесь на <a class="form__link" href="/assets/docs/Soglasie-novoe.docx">обработку персональных данных</a> и соглашаетесь с <a class="form__link" href="">политикой конфиденциальности</a>. </p>
         </form>
       </div>
     </div>
     <script>
+      function lease(){
+        window.location.href = 'https://docs.google.com/forms/d/1xuVaeIyrS-OuC_-Oo2yVmOphvo9A3QQa8YFvF9NjdGA/viewform?edit_requested=true'
+      }
+      function valanter(){
+        window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfwzCUG-OFkgWJEVejMdHgr_dw696qnKoLzWlFpHFfvrms_fw/viewform'
+      }
+function Object(){
+  document.location ='recycle.html';
+}
       function myInst() {
         window.location.href = "https://www.instagram.com/vesch_vo_blago/";
       }
       function myVk() {
         window.location.href = "https://vk.com/veschvoblago";
       }
-
+let modal__export = document.getElementById("modalExp");
+let btn__export = document.getElementById("export");
+let span__export = document.getElementsByClassName("close__export")[0];
+btn__export.onclick = function(){
+  modal__export.style.display = "block";
+}
+span__export.onclick = function(){
+  modal__export.style.display = "none";
+}
       let modal = document.getElementById("myModal");
       let btn = document.getElementById("help");
       let span = document.getElementsByClassName("close")[0];
@@ -273,6 +316,9 @@
         if(event.target == modal){
           modal.style.display = "none";
         }
+        if(event.target == modal__export){
+    modal__export.style.display = "none";
+  }
       }
 
     </script>
