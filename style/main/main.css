@@ -504,4 +504,14 @@ a {
   background-color: transparent;
   color: rgb(52, 129, 132);
   border: 2px solid rgb(52, 129, 132);
+}
+.modal .modal-content .modal__form .form__text-link {
+  color: gray;
+  font-size: 0.7rem;
+  text-align: center;
+  margin-top: 5%;
+}
+.modal .modal-content .modal__form .form__text-link .form__link {
+  color: gray;
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
