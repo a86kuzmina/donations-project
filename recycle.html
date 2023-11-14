@@ -11,21 +11,16 @@
   <body>
     <header class="header">
       <div class="header__logo">
-        <img
-          src="./assets/main/vecteezy_cloth-donate-vector-icon_17355819.jpg"
-          class="header__logo-img"
-          alt="logo"
-        />
+        <a href="/main.html"><img src="./assets/main/vecteezy_cloth-donate-vector-icon_17355819.jpg" class="header__logo-img" alt="logo" /></a>
       </div>
       <nav class="header__menu menu">
-        <a href="#" class="menu__link">О нас</a>
-        <a href="#" class="menu__link">Адреса контейнеров</a>
+        <a href="/recycle.html" class="menu__link">О нас</a>
+        <a href="/main.html#map" class="menu__link">Адреса контейнеров</a>
         <a href="#" class="menu__link">Магазин</a>
-        <a href="#" class="menu__link">Форма вывоза</a>
+        <a href="#" id="export" class="menu__link">Форма вывоза</a>
+        <a href="/faq.html" class="menu__link">FAQ</a>
         <img src="./assets/main/phone-call.png" class="menu__pic" alt="phone" />
-        <a href="tel:+7(903)046-95-13" class="menu__link menu__link-tel"
-          >+7(903)046-95-13</a
-        >
+        <a href="tel:+7(903)046-95-13" class="menu__link menu__link-tel">+7(903)046-95-13</a>
       </nav>
     </header>
     <main>
@@ -140,6 +135,27 @@
           </div>
         </div>
       </div>
+      <div class="recycle__doc">
+        <div class="doc__document">
+        <button type="button" class="btn recycle__btn">Документация</button>
+        <div class="doc__content">
+          <a href="/assets/docs/Устав.pdf" class="link">- Устав</a>
+          <a href="/assets/docs/Справка контрагента.docx" class="link">- Карта контрагента</a>
+          <a href="/assets/docs/Св-во минюст.pdf" class="link">- Свидетельство о регистрации</a>
+          <a href="/assets/docs/Soglasie-novoe.docx" class="link">- Согласие на обработку персональных данных</a>
+          <a href="" class="link">- Политика конфиденциальности</a>
+        </div>
+      </div>
+      <div class="doc__achievements">
+        <button type="button" class="btn recycle__btn">Достижения</button>
+        <div class="doc__content">
+          <a href="/assets/docs/Диплом_Лучший_социальный_проект.pdf" class="link">- "Лучший социальный проект"</a>
+          <a href="/assets/docs/Благодарственное_письмо_Управление_культуры_и_спорта.pdf" class="link">- Благодарственное письмо</a>
+          <a href="/assets/docs/Центр помощи семье и детям.pdf" class="link">- Центр соц. помощи семье и детям</a>
+          <a href="/assets/docs/Центр соц.адаптации населения.pdf" class="link">- Центр соц.адаптации населения</a>
+        </div>
+      </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="footer__container">
@@ -182,6 +198,32 @@
         </div>
       </div>
     </footer>
+
+
+    <div id="modalExp" class="modal">
+      <div class="modal-content">
+        <span class="close__export">&times;</span>
+        <img class="modal__img-exp" src="/assets/main/9649829_7400.jpg" alt="img" />
+        <form class="modal__form">
+          <p class="form__text">Как вас зовут?
+          <br> Наименование организации (если есть):</p>
+          <input type="text" class="form__input" placeholder="Введите ваше имя...">
+          <br>
+          <p class="form__text">Ваш номер телефона?</p>
+          <input type="tel" class="form__input" placeholder="+7(xxx)xxx-xx-xx">
+          <br>
+          <p class="form__text">Ваш адрес?</p>
+          <input type="text" class="form__input" placeholder="г.Кемерово, ул. Ленина, д.75, кв.79">
+          <br>
+          <p class="form__text">Выберите удобную для вас дату и время?</p>
+          <input type="datetime" class="form__input">
+          <br>
+          <button type="submit" class="form__btn btn">Отправить</button>
+          <p class="form__text-link">Нажимая на кнопку вы соглашаетесь на <a class="form__link" href="/assets/docs/Soglasie-novoe.docx">обработку персональных данных</a> и соглашаетесь с <a class="form__link" href="">политикой конфиденциальности</a>. </p>
+        </form>
+      </div>
+    </div>
+
     <script>
       function myInst() {
         window.location.href = "https://www.instagram.com/vesch_vo_blago/";
@@ -189,6 +231,22 @@
       function myVk() {
         window.location.href = "https://vk.com/veschvoblago";
       }
+
+
+let modal__export = document.getElementById("modalExp");
+let btn__export = document.getElementById("export");
+let span__export = document.getElementsByClassName("close__export")[0];
+btn__export.onclick = function(){
+    modal__export.style.display = "block";
+}
+span__export.onclick = function(){
+    modal__export.style.display = "none";
+}
+window.onclick = function(event){
+        if(event.target == modal__export){
+          modal__export.style.display = "none";
+        }
+    }
     </script>
   </body>
 </html>
