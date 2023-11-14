@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset200802.css" />
+    <link rel="stylesheet" href="./style/faq/faq.css" />
+    <title>Вопрос/ответ</title>
+    <link rel="icon" href="./assets/img/clothes_7417849.png" />
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+        <img src="./assets/main/vecteezy_cloth-donate-vector-icon_17355819.jpg" class="header__logo-img" alt="logo"/>
+        </div>
+        <nav class="header__menu menu">
+    <a href="/recycle.html" class="menu__link">О нас</a>
+    <a href="/main.html#map" class="menu__link">Адреса контейнеров</a>
+    <a href="#" class="menu__link">Магазин</a>
+    <a href="#" id="export" class="menu__link">Форма вывоза</a>
+    <a href="/faq.html" class="menu__link">FAQ</a>
+    <img src="./assets/main/phone-call.png" class="menu__pic" alt="phone" />
+        <a href="tel:+7(903)046-95-13" class="menu__link menu__link-tel"
+            >+7(903)046-95-13</a>
+        </nav>
+    </header>
+    <main>
+        <div class="faq">
+            <div class="faq__container">
+            <div class="question">
+                <h3> 1. Мы отдаём вещи бесплатно. Почему вы их продаёте?</h3>
+                <p>Потому что наша организация работает по принципам социального предпринимательства. Это значит, что социальные вопросы решаются с использованием бизнес-схемы. </p>
+            </div>
+            <div class="question">
+                <h3> 2. Вы продаёте вещи, которые вам отдали?</h3>
+                <p>Всё верно! То, что потеряло актуальность для одного, будет необходимо другому. Поэтому часть вещей, которые передают нам горожане, мы продаем в магазине. Вырученные средства, за вычетом накладных расходов, отправляем на благотворительность.</p>
+            </div>
+            <div class="question">
+                <h3> 3. Как проверить прозрачность ваших отчётов? </h3>
+                <p> Во вкладке "Документы и Отчеты" вы можете ознакомиться со всей отчетностью. А также наши партнёры также могут предоставить информацию о поступлениях денежных средств. </p>
+            </div>
+            <div class="question">
+                <h3> 4. Вы занимаетесь раздельным сбором мусора?</h3>
+                <p>Да, на нашем складе-сортировке мусор собирается раздельно. Мы заботимся о том, чтобы  о пакеты и коробки в которых сдают ненужные вещи, после сортировки отправлялись в переработку. </p>
+            </div>
+            <div class="question">
+                <h3>5. Вы платите налоги?</h3>
+                <p>Конечно, мы работаем по системе Общего налогообложения и как любая коммерческая организация, мы платим налоги в полном объёме, а наши сотрудники работают в соответствии с ТК РФ. </p>
+            </div>
+            <div class="question">
+                <h3>6. Как собранные деньги помогли конкретным благотворительным организациям и фондам?</h3>
+                <p>Результаты нашей работы можно увидеть здесь (ссылка на документы и отчеты) и в наших социальных сетях.</p>
+            </div>
+            <div class="question">
+                <h3> 7. Что происходит с вещами имеющими дефекты?</h3>
+                <p>Вещи не подлежащие дальнейшей носке, мы отправляем на переработку, подробнее по <a class="link" href="/recycle.html">ссылке</a>.</p>
+            </div>
+        </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer__container">
+        <h3 class="footer__title">"Любая вещь во благо"</h3>
+        <div class="footer__content">
+            <div class="footer__gricons">
+            <button type="button" class="btn__social" onclick="myInst()">
+                <img class="icon icon__inst" src="/assets/img/instagram (1).png" alt="img"/>
+                </button>
+                <button type="button" class="btn__social" onclick="myVk()">
+                <img
+                class="icon icon__vk"
+                src="/assets/main/vkontakte.png"
+                alt="img"
+                />
+            </button>
+            </div>
+            <a class="privacy-policy" href="">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__contati">
+            <p class="adress contati__title">Связаться с нами:</p>
+            <address>
+            <p class="adress adress__text">
+                По электронно почте :
+                <a class="adress__link link" href="veschvoblago@yandex.ru">veschvoblago@yandex.ru</a>
+                </p>
+                <p class="adress adress__text">
+                или по телефону :
+                <a class="adress__link link" href=" tel:+7(903)046-95-13">+7(903)046-95-13</a>
+                </p>
+            </address>
+        </div>
+        </div>
+    </footer>
+  
+    <div id="modalExp" class="modal">
+        <div class="modal-content">
+          <span class="close__export">&times;</span>
+          <img class="modal__img-exp" src="/assets/main/9649829_7400.jpg" alt="img" />
+          <form class="modal__form">
+            <p class="form__text">Как вас зовут?
+            <br> Наименование организации (если есть):</p>
+            <input type="text" class="form__input" placeholder="Введите ваше имя...">
+            <br>
+            <p class="form__text">Ваш номер телефона?</p>
+            <input type="tel" class="form__input" placeholder="+7(xxx)xxx-xx-xx">
+            <br>
+            <p class="form__text">Ваш адрес?</p>
+            <input type="text" class="form__input" placeholder="г.Кемерово, ул. Ленина, д.75, кв.79">
+            <br>
+            <p class="form__text">Выберите удобную для вас дату и время?</p>
+            <input type="datetime" class="form__input">
+            <br>
+            <button type="submit" class="form__btn btn">Отправить</button>
+            <p class="form__text-link">Нажимая на кнопку вы соглашаетесь на <a class="form__link" href="/assets/docs/Soglasie-novoe.docx">обработку персональных данных</a> и соглашаетесь с <a class="form__link" href="">политикой конфиденциальности</a>. </p>
+          </form>
+        </div>
+      </div>
+
+<script>
+    function Object(){
+    document.location ='recycle.html';
+}
+        function myInst() {
+        window.location.href = "https://www.instagram.com/vesch_vo_blago/";
+    }
+        function myVk() {
+        window.location.href = "https://vk.com/veschvoblago";
+    }
+let modal__export = document.getElementById("modalExp");
+let btn__export = document.getElementById("export");
+let span__export = document.getElementsByClassName("close__export")[0];
+btn__export.onclick = function(){
+    modal__export.style.display = "block";
+}
+span__export.onclick = function(){
+    modal__export.style.display = "none";
+}
+window.onclick = function(event){
+        if(event.target == modal__export){
+          modal__export.style.display = "none";
+        }
+    }
+ </script>     
+</body>
+</html>

@@ -156,235 +156,26 @@ a {
   padding-left: 0;
 }
 
-.intro {
+.faq__container {
+  margin: 5% auto;
   width: 90%;
-  min-height: 80vh;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-  background-image: url("/assets/main/12178789_4907879.svg");
-  background-size: cover;
-  background-position-x: left;
-  margin: 2% auto;
-}
-@media (max-width: 768px) {
-  .intro {
-    padding-top: 20%;
-    min-height: 50vh;
-  }
-}
-.intro .intro__title {
-  padding: 5% 0;
-}
-.intro .intro__btn {
-  padding: 0 0 5% 7%;
-}
-.intro .intro__btn-want {
-  background-color: rgb(52, 129, 132);
-}
-.intro .intro__btn-need {
-  background-color: white;
-  color: #CC5078;
-  border: 2px solid #CC5078;
-}
-
-.objective {
-  width: 90%;
-  min-height: 50vh;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-  margin: 2% auto;
-  display: flex;
-}
-.objective .objective__img {
-  width: 50%;
-}
-.objective .objective__img .objective__pic {
-  width: 100%;
-}
-.objective .objective__info {
-  width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  gap: 20px;
 }
-.objective .objective__btn {
-  background-color: rgb(52, 129, 132);
-}
-
-.grbuttons {
-  width: 90%;
-  margin: auto;
-  height: 40vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.grbuttons .btn__partner {
-  background-color: rgb(209, 111, 66);
-}
-.grbuttons .btn__partner:hover {
-  background-color: transparent;
-  color: rgb(209, 111, 66);
-  border: 2px solid rgb(209, 111, 66);
-}
-.grbuttons .btn__valanter {
-  background-color: rgb(52, 129, 132);
-}
-.grbuttons .btn__valanter:hover {
-  background-color: transparent;
-  color: rgb(52, 129, 132);
-  border: 2px solid rgb(52, 129, 132);
-}
-.grbuttons .btn__lease {
-  background-color: rgb(246, 124, 135);
-}
-.grbuttons .btn__lease:hover {
-  background-color: transparent;
-  color: rgb(246, 124, 135);
-  border: 2px solid rgb(246, 124, 135);
-}
-@media screen and (max-width: 768px) {
-  .grbuttons {
-    height: 20vh;
-  }
-  .grbuttons .btn {
-    max-width: 200px;
-    width: 100%;
-    font-size: 0.8rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .grbuttons {
-    display: flex;
-    flex-direction: column;
-    margin: 15% auto;
-  }
-  .grbuttons .btn {
-    max-width: 200px;
-    width: 100%;
-    font-size: 0.8rem;
-  }
-}
-
-.smi {
-  background-image: url(/assets/main/background2.jpg);
-  background-size: cover;
-  width: 100%;
-  min-height: 90vh;
-  height: -moz-fit-content;
-  height: fit-content;
-  text-align: center;
-  margin-bottom: 5%;
-  margin-top: 2%;
-}
-@media screen and (max-width: 1300px) {
-  .smi {
-    background-size: auto;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-  }
-}
-.smi .smi__container {
-  padding: 5% 0%;
-  width: 90%;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: auto;
+.faq__container .question {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 5px;
-  align-items: center;
 }
-@media screen and (max-width: 1300px) {
-  .smi .smi__container {
-    width: 100%;
-    gap: 2px;
-  }
-  .smi .smi__container :nth-child(3n) {
-    display: none;
-  }
+.faq__container .question h3 {
+  width: 90%;
+  margin-bottom: 1%;
+  font-size: 1.3rem;
 }
-.smi .smi__container .smi__figure {
-  background-color: rgba(205, 228, 229, 0.3);
-  border-radius: 10%;
-  max-width: 270px;
-  min-width: 200px;
-  height: 370px;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 1%;
-}
-@media screen and (max-width: 1300px) {
-  .smi .smi__container .smi__figure {
-    min-width: 200px;
-    max-width: 270px;
-    padding: 2%;
-  }
-}
-.smi .smi__container .smi__figure .smi__figure-img {
-  border-top-right-radius: 10%;
-  border-top-left-radius: 10%;
-  width: 100%;
-  margin-bottom: 6%;
-}
-.smi .smi__container .smi__figure .smi__figuraption-title {
-  text-align: center;
-  text-decoration: underline;
-}
-@media screen and (max-width: 768px) {
-  .smi .smi__container .smi__figure .smi__figuraption-title {
-    font-size: 1.1rem;
-  }
-}
-.smi .smi__container .smi__figure .smi__figuraption-text {
-  margin-top: 4%;
-  margin-bottom: 5%;
-  text-align: center;
+.faq__container .question p {
   font-size: 1rem;
-}
-@media screen and (max-width: 768px) {
-  .smi .smi__container .smi__figure .smi__figuraption-text {
-    font-size: 0.9rem;
-    margin-top: 1%;
-    margin-bottom: 1%;
-  }
-}
-.smi .smi__container .smi__figure .smi__link {
-  text-decoration: underline;
-  color: black;
-}
-
-.map__container {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  height: -moz-fit-content;
-  height: fit-content;
-  gap: 55px;
-}
-@media screen and (max-width: 768px) {
-  .map__container {
-    justify-content: center;
-    gap: 20px;
-  }
-}
-.map__container #city-select {
-  padding: 5px;
-  background-color: rgb(52, 129, 132);
-  height: 50px;
-  width: 150px;
-  color: white;
-}
-.map__container .map__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.map__container .map__content .map__text {
-  margin-top: 2%;
-  font-size: 0.8rem;
+  width: 100%;
+  word-wrap: break-word;
 }
 
 .footer {
@@ -472,20 +263,16 @@ a {
   border: 1px solid #888;
   width: 50%;
 }
-.modal .modal-content .close, .modal .modal-content .close__export {
+.modal .modal-content .close__export {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-.modal .modal-content .close:hover, .modal .modal-content .close__export:hover, .modal .modal-content .close__export:focus, .modal .modal-content .close:focus {
+.modal .modal-content .close__export:hover, .modal .modal-content .close__export:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
-}
-.modal .modal-content .modal__img {
-  width: 100%;
-  max-height: 300px;
 }
 .modal .modal-content .modal__img-exp {
   margin-left: 10%;
@@ -504,9 +291,6 @@ a {
 .modal .modal-content .modal__form .form__input {
   height: 40px;
   padding-left: 3%;
-}
-.modal .modal-content .modal__form .form__textarea {
-  height: 90px;
 }
 .modal .modal-content .modal__form .form__btn {
   width: 30%;
@@ -528,4 +312,4 @@ a {
 .modal .modal-content .modal__form .form__text-link .form__link {
   color: gray;
   text-decoration: underline;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=faq.css.map */
