@@ -97,8 +97,7 @@ a {
   align-items: center;
   width: 100%;
   height: 10vh;
-  margin: 2% auto;
-  padding-bottom: 2%;
+  margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
@@ -110,12 +109,11 @@ a {
   }
 }
 .header .header__logo {
-  width: 10%;
   margin: 0 auto;
+  height: 60%;
 }
 .header .header__logo .header__logo-img {
-  max-width: 100%;
-  max-height: 10vh;
+  height: 100%;
 }
 .header .header__menu {
   width: 80%;
@@ -158,12 +156,13 @@ a {
 
 .intro {
   width: 90%;
-  min-height: 80vh;
+  min-height: 70vh;
   max-height: -moz-fit-content;
   max-height: fit-content;
   background-image: url("/assets/main/12178789_4907879.svg");
-  background-size: cover;
-  background-position-x: left;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-position: top right;
   margin: 2% auto;
 }
 @media (max-width: 768px) {
@@ -181,10 +180,18 @@ a {
 .intro .intro__btn-want {
   background-color: rgb(52, 129, 132);
 }
+.intro .intro__btn-want:hover {
+  background-color: transparent;
+  color: rgb(52, 129, 132);
+  border: 2px solid rgb(52, 129, 132);
+}
 .intro .intro__btn-need {
-  background-color: white;
-  color: #CC5078;
-  border: 2px solid #CC5078;
+  background-color: rgb(246, 124, 135);
+}
+.intro .intro__btn-need:hover {
+  background-color: transparent;
+  color: rgb(246, 124, 135);
+  border: 2px solid rgb(246, 124, 135);
 }
 
 .objective {
@@ -199,7 +206,7 @@ a {
   width: 50%;
 }
 .objective .objective__img .objective__pic {
-  width: 100%;
+  width: 80%;
 }
 .objective .objective__info {
   width: 50%;
@@ -209,6 +216,11 @@ a {
 }
 .objective .objective__btn {
   background-color: rgb(52, 129, 132);
+}
+.objective .objective__btn:hover {
+  background-color: transparent;
+  color: rgb(52, 129, 132);
+  border: 2px solid rgb(52, 129, 132);
 }
 
 .grbuttons {
