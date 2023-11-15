@@ -383,6 +383,9 @@ a {
     gap: 20px;
   }
 }
+.map__container #card__novo {
+  display: none;
+}
 .map__container #city-select {
   padding: 5px;
   background-color: rgb(52, 129, 132);

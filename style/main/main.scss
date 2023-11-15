@@ -346,6 +346,9 @@ a {
             justify-content: center;
             gap:20px;
             }
+        #card__novo{
+            display: none;
+        } 
         #city-select{
             padding: 5px;
             @include btn-green();
