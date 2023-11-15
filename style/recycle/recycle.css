@@ -96,11 +96,8 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  min-height: 10vh;
-  height: -moz-fit-content;
-  height: fit-content;
-  margin: 2% auto;
-  padding-bottom: 2%;
+  height: 10vh;
+  margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   font-weight: 600;
@@ -112,12 +109,11 @@ a {
   }
 }
 .header .header__logo {
-  width: 10%;
   margin: 0 auto;
+  height: 60%;
 }
 .header .header__logo .header__logo-img {
-  max-width: 100%;
-  max-height: 10vh;
+  height: 100%;
 }
 .header .header__menu {
   width: 80%;
@@ -226,7 +222,8 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 100%;
-  margin: auto;
+  margin: 5% auto;
+  padding: 1% 0;
 }
 .recycle .recycle__production {
   width: 90%;
@@ -246,9 +243,18 @@ a {
   display: flex;
 }
 .recycle__rags .recycle__rags-img {
-  width: 40%;
+  width: 50%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .recycle__rags .recycle__rags-img {
+    width: 40%;
+  }
+  .recycle__rags .recycle__rags-img :nth-child(-n+2) {
+    display: none;
+  }
 }
 .recycle__rags .recycle__rags-img .recycle__rags-pic {
   max-width: 350px;
@@ -258,6 +264,16 @@ a {
      object-fit: cover;
   gap: 0;
   transition: transform 0.2s;
+}
+@media (max-width: 1640px) {
+  .recycle__rags .recycle__rags-img .recycle__rags-pic {
+    max-width: 250px;
+  }
+}
+@media (max-width: 1170px) {
+  .recycle__rags .recycle__rags-img .recycle__rags-pic {
+    max-width: 200px;
+  }
 }
 .recycle__rags .recycle__rags-img .recycle__rags-pic:hover {
   transform: scale(1.5);
@@ -290,6 +306,16 @@ a {
   gap: 0;
   transition: transform 0.2s;
 }
+@media (max-width: 1640px) {
+  .recycle__fiber .recycle__fiber-img .recycle__fiber-pic {
+    max-width: 250px;
+  }
+}
+@media (max-width: 1170px) {
+  .recycle__fiber .recycle__fiber-img .recycle__fiber-pic {
+    max-width: 200px;
+  }
+}
 .recycle__fiber .recycle__fiber-img .recycle__fiber-pic:hover {
   transform: scale(1.5);
 }
@@ -313,6 +339,11 @@ a {
   background-color: rgb(52, 129, 132);
   width: 50%;
   height: 50px;
+}
+.recycle__doc .recycle__btn:hover {
+  background-color: transparent;
+  color: rgb(52, 129, 132);
+  border: 2px solid rgb(52, 129, 132);
 }
 .recycle__doc .doc__content {
   display: none;

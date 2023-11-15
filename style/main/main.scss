@@ -96,8 +96,7 @@ a {
     align-items: center;
     width: 100%;
     height: 10vh;
-    margin: 2% auto;
-    padding-bottom: 2%;
+    margin: 0 auto;
     font-family: $Font1;
     font-size: 1.2rem;
     font-weight: 600;
@@ -106,11 +105,10 @@ a {
         font-size: .7rem;
     }
     .header__logo {
-        width: 10%;
         margin: 0 auto;
+        height: 60%;
         .header__logo-img {
-            max-width: 100%;
-            max-height: 10vh;
+            height: 100%;
         }
     }
     .header__menu {
@@ -150,11 +148,12 @@ a {
 }
 .intro {
     width: 90%;
-    min-height: 80vh;
+    min-height: 70vh;
     max-height: fit-content;
     background-image: url('/assets/main/12178789_4907879.svg');
-    background-size: cover;
-    background-position-x: left;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: top right;
     margin: 2% auto;
     @media (max-width: 768px) {
         padding-top: 20%;
@@ -163,15 +162,24 @@ a {
     .intro__title {
         padding: 5% 0;
     }
-
     .intro__btn {
         padding: 0 0 5% 7%;
     }
     .intro__btn-want {
-        @include btn-green
+        @include btn-green;
+    }
+    .intro__btn-want:hover {
+        background-color: transparent;
+        color: rgb(52, 129, 132);
+        border: 2px solid rgb(52, 129, 132);
     }
     .intro__btn-need {
-        @include btn-white;
+        @include btn-red;
+    }
+    .intro__btn-need:hover {
+        background-color: transparent;
+        color: rgb(246, 124, 135);
+        border: 2px solid rgb(246, 124, 135);
     }
 }
 .objective {
@@ -183,7 +191,7 @@ a {
     .objective__img {
         width: 50%;
         .objective__pic {
-            width: 100%;
+            width: 80%;
         }
     }
     .objective__info {
@@ -194,6 +202,11 @@ a {
     }
     .objective__btn {
         @include btn-green;
+    }
+    .objective__btn:hover {
+        background-color: transparent;
+        color: rgb(52, 129, 132);
+        border: 2px solid rgb(52, 129, 132);
     }
 }
 .grbuttons{
@@ -217,7 +230,7 @@ a {
         .btn__valanter:hover{
             background-color: transparent;
             color: rgb(52, 129, 132);
-            border: 2px solid rgb(52, 129, 132);;
+            border: 2px solid rgb(52, 129, 132);
         }
         .btn__lease{
             @include btn-red()
@@ -225,7 +238,7 @@ a {
         .btn__lease:hover{
             background-color: transparent;
             color: rgb(246, 124, 135);
-            border: 2px solid rgb(246, 124, 135);;
+            border: 2px solid rgb(246, 124, 135);
         }
         @media screen and (max-width: 768px) {
             height: 20vh;
