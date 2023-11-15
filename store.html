@@ -11,7 +11,12 @@
   <body>
     <header class="header">
       <div class="header__logo">
-      <a href="/main.html"><img src="./assets/main/vecteezy_cloth-donate-vector-icon_17355819.jpg" class="header__logo-img" alt="logo" /></a>
+        <a href="/main.html"
+          ><img
+            src="./assets/main/vecteezy_cloth-donate-vector-icon_17355819.jpg"
+            class="header__logo-img"
+            alt="logo"
+        /></a>
       </div>
       <nav class="header__menu menu">
         <a href="/recycle.html" class="menu__link">О нас</a>
@@ -21,7 +26,8 @@
         <a href="/faq.html" class="menu__link">FAQ</a>
         <img src="./assets/main/phone-call.png" class="menu__pic" alt="phone" />
         <a href="tel:+7(903)046-95-13" class="menu__link menu__link-tel"
-          >+7(903)046-95-13</a>
+          >+7(903)046-95-13</a
+        >
       </nav>
     </header>
     <main class="store">
@@ -37,7 +43,7 @@
             <button type="button" class="btn__social" onclick="myInst()">
               <img
                 class="icon icon__inst"
-                src="/assets/img/instagram (1).png"
+                src="/assets/main/instagram.png"
                 alt="img"
               />
             </button>
@@ -74,48 +80,73 @@
     <div id="modalExp" class="modal">
       <div class="modal-content">
         <span class="close__export">&times;</span>
-        <img class="modal__img-exp" src="/assets/main/9649829_7400.jpg" alt="img" />
+        <img
+          class="modal__img-exp"
+          src="/assets/main/9649829_7400.jpg"
+          alt="img"
+        />
         <form class="modal__form">
-          <p class="form__text">Как вас зовут?
-          <br> Наименование организации (если есть):</p>
-          <input type="text" class="form__input" placeholder="Введите ваше имя...">
-          <br>
+          <p class="form__text">
+            Как вас зовут? <br />
+            Наименование организации (если есть):
+          </p>
+          <input
+            type="text"
+            class="form__input"
+            placeholder="Введите ваше имя..."
+          />
+          <br />
           <p class="form__text">Ваш номер телефона?</p>
-          <input type="tel" class="form__input" placeholder="+7(xxx)xxx-xx-xx">
-          <br>
+          <input
+            type="tel"
+            class="form__input"
+            placeholder="+7(xxx)xxx-xx-xx"
+          />
+          <br />
           <p class="form__text">Ваш адрес?</p>
-          <input type="text" class="form__input" placeholder="г.Кемерово, ул. Ленина, д.75, кв.79">
-          <br>
+          <input
+            type="text"
+            class="form__input"
+            placeholder="г.Кемерово, ул. Ленина, д.75, кв.79"
+          />
+          <br />
           <p class="form__text">Выберите удобную для вас дату и время?</p>
-          <input type="datetime" class="form__input">
-          <br>
+          <input type="datetime" class="form__input" />
+          <br />
           <button type="submit" class="form__btn btn">Отправить</button>
-          <p class="form__text-link">Нажимая на кнопку вы соглашаетесь на <a class="form__link" href="/assets/docs/Soglasie-novoe.docx">обработку персональных данных</a> и соглашаетесь с <a class="form__link" href="">политикой конфиденциальности</a>. </p>
+          <p class="form__text-link">
+            Нажимая на кнопку вы соглашаетесь на
+            <a class="form__link" href="/assets/docs/Soglasie-novoe.docx"
+              >обработку персональных данных</a
+            >
+            и соглашаетесь с
+            <a class="form__link" href="">политикой конфиденциальности</a>.
+          </p>
         </form>
       </div>
     </div>
 
     <script>
-        function myInst() {
+      function myInst() {
         window.location.href = "https://www.instagram.com/vesch_vo_blago/";
       }
       function myVk() {
         window.location.href = "https://vk.com/veschvoblago";
       }
       let modal__export = document.getElementById("modalExp");
-let btn__export = document.getElementById("export");
-let span__export = document.getElementsByClassName("close__export")[0];
-btn__export.onclick = function(){
-    modal__export.style.display = "block";
-}
-span__export.onclick = function(){
-    modal__export.style.display = "none";
-}
-window.onclick = function(event){
-        if(event.target == modal__export){
+      let btn__export = document.getElementById("export");
+      let span__export = document.getElementsByClassName("close__export")[0];
+      btn__export.onclick = function () {
+        modal__export.style.display = "block";
+      };
+      span__export.onclick = function () {
+        modal__export.style.display = "none";
+      };
+      window.onclick = function (event) {
+        if (event.target == modal__export) {
           modal__export.style.display = "none";
         }
-    }
+      };
     </script>
   </body>
 </html>
