@@ -165,8 +165,9 @@
       </div>
       <div id="map" class="map">
         <div class="map__container">
-          <a
-            class="dg-widget-link"
+          <div id="map__card">
+            <div id="card__kemerovo">
+          <a class="dg-widget-link"
             href="http://2gis.ru/kemerovo/profiles/70000001067875341,70000001022465316,70000001034794658,704215722862998,70000001036409899,704216723117358,704215722774359,704215722754757,70000001020060268,70000001053000236,704215722856890,704215723333713,70000001021000420,70000001019527715,70000001021221451,70000001033596177/center/86.14894866943361,55.36974661834996/zoom/12?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"
             >Посмотреть на карте Кемерова</a
           >
@@ -205,10 +206,14 @@
             >Виджет карты использует JavaScript. Включите его в настройках
             вашего браузера.</noscript
           >
+        </div>
+        <div id="card__novo"><a class="dg-widget-link" href="http://2gis.ru/novokuznetsk/profiles/70000001019964421,70000001024902794,844954211597444,70000001007355545/center/87.198486328125,53.83308071272798/zoom/11?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Новокузнецка</a><script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":840,"height":450,"borderColor":"#a3a3a3","pos":{"lat":53.83308071272798,"lon":87.198486328125,"zoom":11},"opt":{"city":"novokuznetsk"},"org":[{"id":"70000001019964421"},{"id":"70000001024902794"},{"id":"844954211597444"},{"id":"70000001007355545"}]});</script><noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
+        </div>
+          </div>
           <div class="map__content">
             <form class="map__form">
-              <select name="city" id="city-select">
-                <option value="city">Выберите город</option>
+              <select name="city" id="city-select" onchange="show()">
+                <option disabled selected="selected">Выберите город</option>
                 <option value="kemerovo">Кемерово</option>
                 <option value="novokuznetsk">Новокузнецк</option>
               </select>
@@ -354,6 +359,18 @@
       </div>
     </div>
     <script>
+function show(){
+  if(document.getElementById("city-select").value == "novokuznetsk") { 
+document.getElementById("card__kemerovo").style.display = "none";
+document.getElementById("card__novo").style.display = "block";
+  }
+  if(document.getElementById("city-select").value == "kemerovo") { 
+document.getElementById("card__kemerovo").style.display = "block";
+document.getElementById("card__novo").style.display = "none";
+  }
+}
+
+
       function lease() {
         window.location.href =
           "https://docs.google.com/forms/d/1xuVaeIyrS-OuC_-Oo2yVmOphvo9A3QQa8YFvF9NjdGA/viewform?edit_requested=true";
@@ -396,7 +413,7 @@
         if (event.target == modal__export) {
           modal__export.style.display = "none";
         }
-      };
+      }
     </script>
   </body>
 </html>
