@@ -279,8 +279,10 @@ a {
 }
 
 .smi {
-  background-image: url(/assets/main/background2.jpg);
-  background-size: cover;
+  background-image: url(/assets/main/3759828_76254v.jpg), url(/assets/main/3759828_76254h.jpg);
+  background-size: contain;
+  background-position: left, right;
+  background-repeat: no-repeat;
   width: 100%;
   min-height: 90vh;
   height: -moz-fit-content;
@@ -291,7 +293,6 @@ a {
 }
 @media screen and (max-width: 1300px) {
   .smi {
-    background-size: auto;
     min-height: -moz-fit-content;
     min-height: fit-content;
   }
@@ -381,6 +382,9 @@ a {
     justify-content: center;
     gap: 20px;
   }
+}
+.map__container #card__novo {
+  display: none;
 }
 .map__container #city-select {
   padding: 5px;
@@ -516,9 +520,11 @@ a {
 .modal .modal-content .modal__form .form__input {
   height: 40px;
   padding-left: 3%;
+  border-radius: 10px;
 }
 .modal .modal-content .modal__form .form__textarea {
   height: 90px;
+  border-radius: 10px;
 }
 .modal .modal-content .modal__form .form__btn {
   width: 30%;
