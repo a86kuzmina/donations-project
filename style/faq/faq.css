@@ -200,6 +200,11 @@ a {
     margin-bottom: 1%;
   }
 }
+@media screen and (max-width: 480px) {
+  .footer .footer__container .footer__title {
+    margin-bottom: 2%;
+  }
+}
 .footer .footer__container .footer__content {
   display: flex;
   flex-direction: column;

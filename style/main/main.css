@@ -257,13 +257,24 @@ a {
 }
 .rules .rules__grcards {
   display: flex;
-  width: 80%;
+  width: 90%;
+}
+@media screen and (max-width: 480px) {
+  .rules .rules__grcards {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 .rules .rules__grcards .rules__card {
   padding: 5%;
-  width: 40%;
-  margin: 5% auto;
+  width: 50%;
+  margin: 5% auto 2%;
   box-sizing: border-box;
+}
+@media screen and (max-width: 480px) {
+  .rules .rules__grcards .rules__card {
+    width: 100%;
+  }
 }
 .rules .rules__grcards .rules__card .rules__card-title {
   padding-bottom: 5%;
@@ -415,6 +426,7 @@ a {
     display: flex;
     flex-direction: column;
     margin: 15% auto;
+    gap: 5px;
   }
   .grbuttons .btn {
     max-width: 200px;
@@ -591,6 +603,11 @@ a {
   .footer .footer__container .footer__title {
     font-size: 1.2rem;
     margin-bottom: 1%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer .footer__container .footer__title {
+    margin-bottom: 2%;
   }
 }
 .footer .footer__container .footer__content {

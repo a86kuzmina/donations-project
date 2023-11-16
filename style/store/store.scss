@@ -149,8 +149,17 @@ a {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    @media screen and (max-width: 768px) {
+        height: 75vh;
+    } 
+    @media screen and (max-width: 480px) {
+        height: 60vh;
+    } 
     .store__title{
         margin-bottom: 17%;
+        @media screen and (max-width: 768px) {
+            margin-bottom: 60%;
+        } 
     }
 }
 
@@ -159,6 +168,9 @@ a {
     margin-top: 5%;
     padding-top: 1%;
     padding-bottom: 1%;
+    @media screen and (max-width: 768px) {
+        margin-top: 0%;
+    } 
     .footer__container{
         width: 90%;
         margin: auto;
@@ -173,6 +185,9 @@ a {
             font-size: 1.2rem;
             margin-bottom: 1%;
             }
+            @media screen and (max-width: 480px) {
+                    margin-bottom: 2%;
+                    }
         }
         .footer__content{
             display: flex;

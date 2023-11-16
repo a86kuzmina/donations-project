@@ -335,9 +335,16 @@ a {
   display: flex;
   justify-content: space-around;
 }
+@media screen and (max-width: 480px) {
+  .recycle__doc {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: start;
+  }
+}
 .recycle__doc .recycle__btn {
   background-color: rgb(52, 129, 132);
-  width: 50%;
+  width: 100%;
   height: 50px;
 }
 .recycle__doc .recycle__btn:hover {
@@ -351,6 +358,17 @@ a {
   display: flex;
   flex-direction: column;
   gap: 6px;
+}
+.recycle__doc .doc__content .doc__link {
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  .recycle__doc .doc__content .doc__link {
+    text-decoration: underline;
+  }
+}
+.recycle__doc .doc__content .doc__link:hover {
+  text-decoration: underline;
 }
 
 .footer {
@@ -370,6 +388,16 @@ a {
   width: 100%;
   text-align: center;
   font-style: inherit;
+}
+@media screen and (max-width: 768px) {
+  .footer .footer__container .footer__title {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer .footer__container .footer__title {
+    margin-bottom: 2%;
+  }
 }
 .footer .footer__container .footer__content {
   display: flex;

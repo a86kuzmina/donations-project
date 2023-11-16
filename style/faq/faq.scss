@@ -187,6 +187,9 @@ a {
             font-size: 1.2rem;
             margin-bottom: 1%;
             }
+            @media screen and (max-width: 480px) {
+                    margin-bottom: 2%;
+                    }
         }
         .footer__content{
             display: flex;
