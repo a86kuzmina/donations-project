@@ -230,6 +230,12 @@ a {
         padding: 5px;
         border: 1px solid #888;
         width: 50%;
+        @media screen and (max-width: 768px) {
+            width: 80%;
+        } 
+        @media screen and (max-width: 480px) {
+            width: 90%;
+        } 
         .close, .close__export{
             color: #aaa;
             float: right;

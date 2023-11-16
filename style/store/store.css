@@ -252,6 +252,16 @@ a {
   border: 1px solid #888;
   width: 50%;
 }
+@media screen and (max-width: 768px) {
+  .modal .modal-content {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .modal .modal-content {
+    width: 90%;
+  }
+}
 .modal .modal-content .close, .modal .modal-content .close__export {
   color: #aaa;
   float: right;
