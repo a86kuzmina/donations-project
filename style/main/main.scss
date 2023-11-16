@@ -473,6 +473,21 @@ a {
             justify-content: center;
             gap:20px;
             }
+            @media screen and (max-width: 480px) {
+                display: none;
+                }
+        #map__card{
+            display: block;
+            @media screen and (max-width: 768px) {
+                display: none;
+                } 
+        }
+        #map__card-tab{
+            display: none;
+            @media screen and (max-width: 768px) {
+                display: block;
+                } 
+        }
         #card__novo{
             display: none;
         } 

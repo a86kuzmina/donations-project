@@ -528,6 +528,27 @@ a {
     gap: 20px;
   }
 }
+@media screen and (max-width: 480px) {
+  .map__container {
+    display: none;
+  }
+}
+.map__container #map__card {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  .map__container #map__card {
+    display: none;
+  }
+}
+.map__container #map__card-tab {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .map__container #map__card-tab {
+    display: block;
+  }
+}
 .map__container #card__novo {
   display: none;
 }
