@@ -431,7 +431,7 @@
             </p>
             <p class="adress adress__text">
               или по телефону :
-              <a class="adress__link link" href=" tel:+7(903)046-95-13">
+              <a class="adress__link link" href="tel:+7(903)046-95-13">
                 +7(903)046-95-13</a
               >
             </p>
@@ -462,19 +462,22 @@
           <p class="form__text">Ваш номер телефона?</p>
           <input
             type="tel"
+            name="phone"
             class="form__input"
+            pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
             placeholder="+7(xxx)xxx-xx-xx"
           />
           <br />
           <p class="form__text">Ваш адрес?</p>
           <input
             type="text"
+            name="address"
             class="form__input"
             placeholder="г.Кемерово, ул. Ленина, д.75, кв.79"
           />
           <br />
           <p class="form__text">Выберите удобную для вас дату и время?</p>
-          <input type="datetime" class="form__input" />
+          <input type="datetime-local" name="datetime" class="form__input" />
           <br />
           <button type="submit" class="form__btn btn">Отправить</button>
           <p class="form__text-link">
