@@ -200,6 +200,11 @@ a {
     margin-bottom: 1%;
   }
 }
+@media screen and (max-width: 480px) {
+  .footer .footer__container .footer__title {
+    margin-bottom: 2%;
+  }
+}
 .footer .footer__container .footer__content {
   display: flex;
   flex-direction: column;
@@ -260,6 +265,16 @@ a {
   padding: 5px;
   border: 1px solid #888;
   width: 50%;
+}
+@media screen and (max-width: 768px) {
+  .modal .modal-content {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .modal .modal-content {
+    width: 90%;
+  }
 }
 .modal .modal-content .close__export {
   color: #aaa;
