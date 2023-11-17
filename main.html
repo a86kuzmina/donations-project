@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/reset200802.css" />
+    <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/main/main.css" />
     <title>Вещь во благо</title>
     <link rel="icon" href="./assets/main/clothes_7417849.png" />
@@ -201,7 +201,7 @@
       <div class="grbuttons">
         <button type="button" class="btn btn__partner">Стать партнером</button>
         <button type="button" class="btn btn__valanter" onclick="valanter()">
-          Стать валантером
+          Стать волонтером
         </button>
         <button type="button" class="btn btn__lease" onclick="lease()">
           Арендовать контейнер
@@ -358,6 +358,88 @@
                 new DGWidgetLoader({
                   width: 840,
                   height: 450,
+                  borderColor: "#a3a3a3",
+                  pos: {
+                    lat: 53.83308071272798,
+                    lon: 87.198486328125,
+                    zoom: 11,
+                  },
+                  opt: { city: "novokuznetsk" },
+                  org: [
+                    { id: "70000001019964421" },
+                    { id: "70000001024902794" },
+                    { id: "844954211597444" },
+                    { id: "70000001007355545" },
+                  ],
+                });
+              </script>
+              <noscript style="color: #c00; font-size: 16px; font-weight: bold"
+                >Виджет карты использует JavaScript. Включите его в настройках
+                вашего браузера.</noscript
+              >
+            </div>
+          </div>
+          <div id="map__card-tab">
+            <div id="card__kemerovo">
+              <a
+                class="dg-widget-link"
+                href="http://2gis.ru/kemerovo/profiles/70000001067875341,70000001022465316,70000001034794658,704215722862998,70000001036409899,704216723117358,704215722774359,704215722754757,70000001020060268,70000001053000236,704215722856890,704215723333713,70000001021000420,70000001019527715,70000001021221451,70000001033596177/center/86.14894866943361,55.36974661834996/zoom/12?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"
+                >Посмотреть на карте Кемерова</a
+              >
+              <script
+                charset="utf-8"
+                src="https://widgets.2gis.com/js/DGWidgetLoader.js"
+              ></script>
+              <script charset="utf-8">
+                new DGWidgetLoader({
+                  width: 760,
+                  height: 350,
+                  borderColor: "#a3a3a3",
+                  pos: {
+                    lat: 55.36974661834996,
+                    lon: 86.14894866943361,
+                    zoom: 12,
+                  },
+                  opt: { city: "kemerovo" },
+                  org: [
+                    { id: "70000001067875341" },
+                    { id: "70000001022465316" },
+                    { id: "70000001034794658" },
+                    { id: "704215722862998" },
+                    { id: "70000001036409899" },
+                    { id: "704216723117358" },
+                    { id: "704215722774359" },
+                    { id: "704215722754757" },
+                    { id: "70000001020060268" },
+                    { id: "70000001053000236" },
+                    { id: "704215722856890" },
+                    { id: "704215723333713" },
+                    { id: "70000001021000420" },
+                    { id: "70000001019527715" },
+                    { id: "70000001021221451" },
+                    { id: "70000001033596177" },
+                  ],
+                });
+              </script>
+              <noscript style="color: #c00; font-size: 16px; font-weight: bold"
+                >Виджет карты использует JavaScript. Включите его в настройках
+                вашего браузера.</noscript
+              >
+            </div>
+            <div id="card__novo">
+              <a
+                class="dg-widget-link"
+                href="http://2gis.ru/novokuznetsk/profiles/70000001019964421,70000001024902794,844954211597444,70000001007355545/center/87.198486328125,53.83308071272798/zoom/11?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap"
+                >Посмотреть на карте Новокузнецка</a
+              >
+              <script
+                charset="utf-8"
+                src="https://widgets.2gis.com/js/DGWidgetLoader.js"
+              ></script>
+              <script charset="utf-8">
+                new DGWidgetLoader({
+                  width: 760,
+                  height: 350,
                   borderColor: "#a3a3a3",
                   pos: {
                     lat: 53.83308071272798,
