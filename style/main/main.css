@@ -436,6 +436,7 @@ a {
   height: -moz-fit-content;
   height: fit-content;
   margin: 5% auto;
+  gap: 10px;
 }
 .partners .partners__img {
   max-width: 100px;
