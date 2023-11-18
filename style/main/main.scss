@@ -652,16 +652,21 @@ a {
             @media screen and (max-width: 480px) {
                 width: 90%;
             } 
-            .close, .close__export{
+            .close, .close__export, .close__work, .close__lease{
                 color: #aaa;
                 float: right;
                 font-size: 28px;
                 font-weight: bold;
             }
-            .close:hover,.close__export:hover, .close__export:focus, .close:focus{
+            .close:hover,.close__export:hover,.close__work:hover, .close__lease:hover,
+            .close__work:focus, .close__export:focus, .close:focus, .close__lease:focus{
                 color: black;
                 text-decoration: none;
                 cursor: pointer;
+            }
+            .modal__title{
+                padding:5% 5% 2% 5%;
+                font-size: 2rem;
             }
             .modal__img{
                 width: 100%;
@@ -679,6 +684,22 @@ a {
                 gap:5%;
                 .form__text{
                     margin-bottom: 2%;
+                }
+                .form__radio{
+                    display: flex;
+                    gap:10px;
+                    margin-bottom: 2%;
+                    height: fit-content;
+                    .form__radio-text{
+                        font-size: 1rem;
+                        flex-wrap: wrap;
+                        @media screen and (max-width: 768px) {
+                            font-size: .8rem;
+                        } 
+                        @media screen and (max-width: 480px) {
+                            font-size:.6rem;
+                        } 
+                    }
                 }
                 .form__input{
                     height: 40px;
