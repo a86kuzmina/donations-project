@@ -200,10 +200,10 @@
       </div>
       <div class="grbuttons">
         <button type="button" class="btn btn__partner">Стать партнером</button>
-        <button type="button" class="btn btn__valanter" onclick="valanter()">
+        <button type="button" class="btn btn__valanter" id="volonter">
           Стать волонтером
         </button>
-        <button type="button" class="btn btn__lease" onclick="lease()">
+        <button type="button" class="btn btn__lease" id="lease">
           Арендовать контейнер
         </button>
       </div>
@@ -612,6 +612,93 @@
         </form>
       </div>
     </div>
+
+    <div id="modalWork" class="modal">
+      <div class="modal-content">
+        <span class="close__work">&times;</span>
+        <img class="modal__img" src="/assets/main/783704.jpg" alt="img" />
+        <form class="modal__form">
+          <p class="form__text">Как вас зовут?</p>
+          <input type="text" class="form__input" placeholder="Введите ваше имя..." />
+          <br />
+          <p class="form__text">Ваш адресс эл.почты:</p>
+          <input type="email" class="form__input" placeholder="email@mail.ru" />
+          <br />
+          <p class="form__text">Адрес проживания?</p>
+          <input type="text" class="form__input" placeholder="г.Кемерово, ул. Ленина , д.75 " />
+          <br />
+          <p class="form__text">Ваш номер телефона?</p>
+          <input
+            type="tel"
+            class="form__input"
+            placeholder="+7(xxx)xxx-xx-xx"
+          />
+          <br />
+          <p class="form__text">О себе</p>
+          <textarea
+            class="form__textarea"
+            placeholder="Расскажите о себе максимально подробно"></textarea>
+          <br />
+          <button type="submit" class="form__btn btn">Отправить</button>
+          <p class="form__text-link">
+            Нажимая на кнопку вы соглашаетесь на
+            <a class="form__link" href="/assets/docs/Soglasie-novoe.docx"
+              >обработку персональных данных</a
+            >
+            и соглашаетесь с
+            <a class="form__link" href="">политикой конфиденциальности</a>.
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div id="modalLease" class="modal">
+      <div class="modal-content">
+        <span class="close__lease">&times;</span>
+        <h2 class="modal__title"> Экобокс в твоей компании!</h2>
+        <form class="modal__form">
+          <p class="form__text">Расскажите о своей компании:</p>
+          <input type="text" class="form__input" placeholder="..." />
+          <br />
+          <p class="form__text">Сколько сотрудников в вашей компании</p>
+          <input type="text" class="form__input" placeholder="Введите наименование вашей организации..." />
+          <br />
+          <p class="form__text">Вариант контейнера :</p>
+          <div class="form__radio"><input type="radio" name="variant"/> <p class="form__radio-text">Временный контейнер от 2 недель до 3 месяцев (Материал: Фанера Габариты: 76*76*160 см.)</p></div>
+          <div class="form__radio"><input type="radio"  name="variant"/> <p class="form__radio-text">Постоянный контейнер (Материал: Массив сосны  Габариты: 80*80*175см.)</p></div>
+          <div class="form__radio"><input type="radio"  name="variant"/><p class="form__radio-text">Уличный контейнер на год  (Материал: Металл Габариты: 115*115*170 см.)</p></div>
+          <br />
+          <p class="form__text">Как вас зовут?</p>
+          <input type="text" class="form__input" placeholder="Иванов Иван" />
+          <br />
+          <p class="form__text">Название вашей организации </p>
+          <input type="text" class="form__input" placeholder="Введите наименование вашей организации..." />
+          <br />
+          <p class="form__text">Ваш адресс эл.почты:</p>
+          <input type="email" class="form__input" placeholder="email@mail.ru" />
+          <br />
+          <p class="form__text">Адрес вашей организации ?</p>
+          <input type="text" class="form__input" placeholder="г.Кемерово, ул. Ленина , д.75 " />
+          <br />
+          <p class="form__text">Контактный телефон:</p>
+          <input
+            type="tel"
+            class="form__input"
+            placeholder="+7(xxx)xxx-xx-xx"
+          />
+          <br />
+          <button type="submit" class="form__btn btn">Отправить</button>
+          <p class="form__text-link">
+            Нажимая на кнопку вы соглашаетесь на
+            <a class="form__link" href="/assets/docs/Soglasie-novoe.docx"
+              >обработку персональных данных</a
+            >
+            и соглашаетесь с
+            <a class="form__link" href="">политикой конфиденциальности</a>.
+          </p>
+        </form>
+      </div>
+    </div>
     <script>
       function show() {
         if (document.getElementById("city-select").value == "novokuznetsk") {
@@ -623,15 +710,6 @@
           document.getElementById("card__novo").style.display = "none";
         }
       }
-
-      function lease() {
-        window.location.href =
-          "https://docs.google.com/forms/d/1xuVaeIyrS-OuC_-Oo2yVmOphvo9A3QQa8YFvF9NjdGA/viewform?edit_requested=true";
-      }
-      function valanter() {
-        window.location.href =
-          "https://docs.google.com/forms/d/e/1FAIpQLSfwzCUG-OFkgWJEVejMdHgr_dw696qnKoLzWlFpHFfvrms_fw/viewform";
-      }
       function Object() {
         document.location = "recycle.html";
       }
@@ -641,6 +719,24 @@
       function myVk() {
         window.location.href = "https://vk.com/veschvoblago";
       }
+      let modal__lease = document.getElementById("modalLease");
+      let btn__lease = document.getElementById("lease");
+      let span__lease = document.getElementsByClassName("close__lease")[0];
+      btn__lease.onclick = function(){
+        modal__lease.style.display = "block";
+      };
+      span__lease.onclick = function(){
+        modal__lease.style.display =" none";
+      };
+      let modal__work = document.getElementById("modalWork");
+      let btn__work = document.getElementById("volonter");
+      let span__work = document.getElementsByClassName("close__work")[0];
+      btn__work.onclick = function(){
+      modal__work.style.display = "block";
+      };
+      span__work.onclick = function(){
+      modal__work.style.display = "none";
+      };
       let modal__export = document.getElementById("modalExp");
       let btn__export = document.getElementById("export");
       let span__export = document.getElementsByClassName("close__export")[0];
@@ -665,6 +761,12 @@
         }
         if (event.target == modal__export) {
           modal__export.style.display = "none";
+        }
+        if(event.target == modal__work){
+          modal__work.style.display = "none";
+        }
+        if(event.target == modal__lease){
+          modal__lease.style.display = "none";
         }
       };
     </script>
