@@ -762,16 +762,21 @@ a {
     width: 90%;
   }
 }
-.modal .modal-content .close, .modal .modal-content .close__export {
+.modal .modal-content .close, .modal .modal-content .close__export, .modal .modal-content .close__work, .modal .modal-content .close__lease {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-.modal .modal-content .close:hover, .modal .modal-content .close__export:hover, .modal .modal-content .close__export:focus, .modal .modal-content .close:focus {
+.modal .modal-content .close:hover, .modal .modal-content .close__export:hover, .modal .modal-content .close__work:hover, .modal .modal-content .close__lease:hover,
+.modal .modal-content .close__work:focus, .modal .modal-content .close__export:focus, .modal .modal-content .close:focus, .modal .modal-content .close__lease:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+.modal .modal-content .modal__title {
+  padding: 5% 5% 2% 5%;
+  font-size: 2rem;
 }
 .modal .modal-content .modal__img {
   width: 100%;
@@ -790,6 +795,27 @@ a {
 }
 .modal .modal-content .modal__form .form__text {
   margin-bottom: 2%;
+}
+.modal .modal-content .modal__form .form__radio {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.modal .modal-content .modal__form .form__radio .form__radio-text {
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  .modal .modal-content .modal__form .form__radio .form__radio-text {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .modal .modal-content .modal__form .form__radio .form__radio-text {
+    font-size: 0.6rem;
+  }
 }
 .modal .modal-content .modal__form .form__input {
   height: 40px;
