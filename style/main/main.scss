@@ -120,7 +120,7 @@ a {
     }
     .header__logo {
         margin: 0 auto;
-        height: 60%;
+        height: 70%;
         .header__logo-img {
             height: 100%;
         }
@@ -380,7 +380,7 @@ a {
     align-items: center;
     width: 90%;
     height: fit-content;
-    margin: 5% auto;
+    margin: 5% auto 2%;
     gap:10px;
     .partners__img {
         max-width: 100px;
@@ -394,17 +394,17 @@ a {
 .grbuttons{
     width: 90%;
     margin: auto;
-    height: 40vh;
+    height: 30vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
         .btn__partner{
-        @include btn-orange()
+        @include btn-red()
         }
         .btn__partner:hover{
             background-color: transparent;
-            color: rgb(209, 111, 66);
-            border: 2px solid rgb(209, 111, 66);
+            color: rgb(246, 124, 135);
+            border: 2px solid rgb(246, 124, 135);
         }
         .btn__valanter{
             @include btn-green()
@@ -413,14 +413,6 @@ a {
             background-color: transparent;
             color: rgb(52, 129, 132);
             border: 2px solid rgb(52, 129, 132);
-        }
-        .btn__lease{
-            @include btn-red()
-        }
-        .btn__lease:hover{
-            background-color: transparent;
-            color: rgb(246, 124, 135);
-            border: 2px solid rgb(246, 124, 135);
         }
         @media screen and (max-width: 768px) {
             height: 20vh;
@@ -653,14 +645,14 @@ a {
             @media screen and (max-width: 480px) {
                 width: 90%;
             } 
-            .close, .close__export, .close__work, .close__lease{
+            .close, .close__export, .close__work, .close__partner{
                 color: #aaa;
                 float: right;
                 font-size: 28px;
                 font-weight: bold;
             }
-            .close:hover,.close__export:hover,.close__work:hover, .close__lease:hover,
-            .close__work:focus, .close__export:focus, .close:focus, .close__lease:focus{
+            .close:hover,.close__export:hover,.close__work:hover, .close__partner:hover,
+            .close__work:focus, .close__export:focus, .close:focus, .close__partner:focus{
                 color: black;
                 text-decoration: none;
                 cursor: pointer;
@@ -688,12 +680,12 @@ a {
                 }
                 .form__radio{
                     display: flex;
+                    flex-wrap: wrap;
                     gap:10px;
                     margin-bottom: 2%;
                     height: fit-content;
                     .form__radio-text{
                         font-size: 1rem;
-                        flex-wrap: wrap;
                         @media screen and (max-width: 768px) {
                             font-size: .8rem;
                         } 
@@ -707,6 +699,9 @@ a {
                     padding-left: 3%;
                     padding-right: 3%;
                     border-radius: 10px;
+                }
+                .input-var{
+                    width: 100%;
                 }
                 .form__textarea{
                     height: 90px;

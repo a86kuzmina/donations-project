@@ -130,7 +130,7 @@ a {
 }
 .header .header__logo {
   margin: 0 auto;
-  height: 60%;
+  height: 70%;
 }
 .header .header__logo .header__logo-img {
   height: 100%;
@@ -435,7 +435,7 @@ a {
   width: 90%;
   height: -moz-fit-content;
   height: fit-content;
-  margin: 5% auto;
+  margin: 5% auto 2%;
   gap: 10px;
 }
 .partners .partners__img {
@@ -452,18 +452,18 @@ a {
 .grbuttons {
   width: 90%;
   margin: auto;
-  height: 40vh;
+  height: 30vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 .grbuttons .btn__partner {
-  background-color: rgb(209, 111, 66);
+  background-color: rgb(246, 124, 135);
 }
 .grbuttons .btn__partner:hover {
   background-color: transparent;
-  color: rgb(209, 111, 66);
-  border: 2px solid rgb(209, 111, 66);
+  color: rgb(246, 124, 135);
+  border: 2px solid rgb(246, 124, 135);
 }
 .grbuttons .btn__valanter {
   background-color: rgb(52, 129, 132);
@@ -472,14 +472,6 @@ a {
   background-color: transparent;
   color: rgb(52, 129, 132);
   border: 2px solid rgb(52, 129, 132);
-}
-.grbuttons .btn__lease {
-  background-color: rgb(246, 124, 135);
-}
-.grbuttons .btn__lease:hover {
-  background-color: transparent;
-  color: rgb(246, 124, 135);
-  border: 2px solid rgb(246, 124, 135);
 }
 @media screen and (max-width: 768px) {
   .grbuttons {
@@ -763,14 +755,14 @@ a {
     width: 90%;
   }
 }
-.modal .modal-content .close, .modal .modal-content .close__export, .modal .modal-content .close__work, .modal .modal-content .close__lease {
+.modal .modal-content .close, .modal .modal-content .close__export, .modal .modal-content .close__work, .modal .modal-content .close__partner {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-.modal .modal-content .close:hover, .modal .modal-content .close__export:hover, .modal .modal-content .close__work:hover, .modal .modal-content .close__lease:hover,
-.modal .modal-content .close__work:focus, .modal .modal-content .close__export:focus, .modal .modal-content .close:focus, .modal .modal-content .close__lease:focus {
+.modal .modal-content .close:hover, .modal .modal-content .close__export:hover, .modal .modal-content .close__work:hover, .modal .modal-content .close__partner:hover,
+.modal .modal-content .close__work:focus, .modal .modal-content .close__export:focus, .modal .modal-content .close:focus, .modal .modal-content .close__partner:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -799,6 +791,7 @@ a {
 }
 .modal .modal-content .modal__form .form__radio {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 2%;
   height: -moz-fit-content;
@@ -806,7 +799,6 @@ a {
 }
 .modal .modal-content .modal__form .form__radio .form__radio-text {
   font-size: 1rem;
-  flex-wrap: wrap;
 }
 @media screen and (max-width: 768px) {
   .modal .modal-content .modal__form .form__radio .form__radio-text {
@@ -823,6 +815,9 @@ a {
   padding-left: 3%;
   padding-right: 3%;
   border-radius: 10px;
+}
+.modal .modal-content .modal__form .input-var {
+  width: 100%;
 }
 .modal .modal-content .modal__form .form__textarea {
   height: 90px;
