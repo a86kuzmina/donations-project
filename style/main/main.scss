@@ -660,6 +660,18 @@ a {
             .modal__title{
                 padding:5% 5% 2% 5%;
                 font-size: 2rem;
+                @media screen and (max-width: 480px) {
+                  font-size: 1.3rem;
+                } 
+                .modal__logo{
+                    margin-right: 15px;
+                    width: 40px;
+                    height: 40px;
+                    @media screen and (max-width: 480px) {
+                        width: 32px;
+                        height: 32px;
+                    } 
+                }
             }
             .modal__img{
                 width: 100%;
@@ -699,6 +711,10 @@ a {
                     padding-left: 3%;
                     padding-right: 3%;
                     border-radius: 10px;
+                    @media screen and (max-width: 480px) {
+                        height: 20px;
+                        font-size: .5rem;
+                    } 
                 }
                 .input-var{
                     width: 100%;

@@ -771,6 +771,22 @@ a {
   padding: 5% 5% 2% 5%;
   font-size: 2rem;
 }
+@media screen and (max-width: 480px) {
+  .modal .modal-content .modal__title {
+    font-size: 1.3rem;
+  }
+}
+.modal .modal-content .modal__title .modal__logo {
+  margin-right: 15px;
+  width: 40px;
+  height: 40px;
+}
+@media screen and (max-width: 480px) {
+  .modal .modal-content .modal__title .modal__logo {
+    width: 32px;
+    height: 32px;
+  }
+}
 .modal .modal-content .modal__img {
   width: 100%;
   max-height: 300px;
@@ -815,6 +831,12 @@ a {
   padding-left: 3%;
   padding-right: 3%;
   border-radius: 10px;
+}
+@media screen and (max-width: 480px) {
+  .modal .modal-content .modal__form .form__input {
+    height: 20px;
+    font-size: 0.5rem;
+  }
 }
 .modal .modal-content .modal__form .input-var {
   width: 100%;
