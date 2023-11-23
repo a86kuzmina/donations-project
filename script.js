@@ -1,3 +1,15 @@
+const btnVk = document.querySelector("#vk");
+const btnTg = document.querySelector("#tg");
+const btnInst = document.querySelector("#inst");
+btnVk.addEventListener('click',() => {
+    window.location.href = "https://vk.com/veschvoblago";
+});
+btnTg.addEventListener('click',() => {
+    window.location.href = "https://t.me/veschvoblago";
+});
+btnInst.addEventListener('click',() =>  {
+    window.location.href = "https://www.instagram.com/vesch_vo_blago/";
+});
 const modal__export = document.getElementById("modalExp");
 const btn__export = document.getElementById("export");
 const span__export = document.getElementsByClassName("close__export")[0];
@@ -71,15 +83,3 @@ function show() {
     }
   }
 
-const btnVk = document.querySelector("#vk");
-const btnTg = document.querySelector("#tg");
-const btnInst = document.querySelector("#inst");
-btnVk.addEventListener('click',() => {
-    window.location.href = "https://vk.com/veschvoblago";
-});
-btnTg.addEventListener('click',() => {
-    window.location.href = "https://t.me/veschvoblago";
-});
-btnInst.addEventListener('click',() =>  {
-    window.location.href = "https://www.instagram.com/vesch_vo_blago/";
-});
