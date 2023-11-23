@@ -110,21 +110,21 @@
         <h3 class="footer__title">"Любая вещь во благо"</h3>
         <div class="footer__content">
           <div class="footer__gricons">
-            <button type="button" class="btn__social" onclick="myInst()">
+            <button type="button" class="btn__social" id="inst">
               <img
                 class="icon icon__inst"
                 src="./assets/main/instagram.png"
                 alt="img"
               />
             </button>
-            <button type="button" class="btn__social" onclick="myVk()">
+            <button type="button" class="btn__social" id="vk">
               <img
                 class="icon icon__vk"
                 src="./assets/main/vkontakte.png"
                 alt="img"
               />
             </button>
-            <button type="button" class="btn__social" onclick="myTelegram()">
+            <button type="button" class="btn__social" id="tg">
               <img
                 class="icon icon__telegram"
                 src="./assets/main/telegramm.png"
@@ -203,30 +203,6 @@
       </div>
     </div>
 
-    <script>
-      function myTelegram() {
-        window.location.href = "https://t.me/veschvoblago";
-      }
-      function myInst() {
-        window.location.href = "https://www.instagram.com/vesch_vo_blago/";
-      }
-      function myVk() {
-        window.location.href = "https://vk.com/veschvoblago";
-      }
-      let modal__export = document.getElementById("modalExp");
-      let btn__export = document.getElementById("export");
-      let span__export = document.getElementsByClassName("close__export")[0];
-      btn__export.onclick = function () {
-        modal__export.style.display = "block";
-      };
-      span__export.onclick = function () {
-        modal__export.style.display = "none";
-      };
-      window.onclick = function (event) {
-        if (event.target == modal__export) {
-          modal__export.style.display = "none";
-        }
-      };
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

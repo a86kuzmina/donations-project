@@ -489,21 +489,21 @@
         <h3 class="footer__title">"Любая вещь во благо"</h3>
         <div class="footer__content">
           <div class="footer__gricons">
-            <button type="button" class="btn__social" onclick="myInst()">
+            <button type="button" class="btn__social" id="inst">
               <img
                 class="icon icon__inst"
                 src="/assets/main/instagram.png"
                 alt="img"
               />
             </button>
-            <button type="button" class="btn__social" onclick="myVk()">
+            <button type="button" class="btn__social" id="vk">
               <img
                 class="icon icon__vk"
                 src="/assets/main/vkontakte.png"
                 alt="img"
               />
             </button>
-            <button type="button" class="btn__social" onclick="myTelegram()">
+            <button type="button" class="btn__social" id="tg">
               <img
                 class="icon icon__telegram"
                 src="/assets/main/telegramm.png"
@@ -751,79 +751,6 @@
         </form>
       </div>
     </div>
-    <script>
-      function show() {
-        if (document.getElementById("city-select").value == "novokuznetsk") {
-          document.getElementById("card__kemerovo").style.display = "none";
-          document.getElementById("card__novo").style.display = "block";
-        }
-        if (document.getElementById("city-select").value == "kemerovo") {
-          document.getElementById("card__kemerovo").style.display = "block";
-          document.getElementById("card__novo").style.display = "none";
-        }
-      }
-      function Object() {
-        document.location = "recycle.html";
-      }
-      function myTelegram() {
-        window.location.href = "https://t.me/veschvoblago";
-      }
-      function myInst() {
-        window.location.href = "https://www.instagram.com/vesch_vo_blago/";
-      }
-      function myVk() {
-        window.location.href = "https://vk.com/veschvoblago";
-      }
-      let modal__partner = document.getElementById("modalPartner");
-      let btn__partner = document.getElementById("partner");
-      let span__partner = document.getElementsByClassName("close__partner")[0];
-      btn__partner.onclick = function () {
-        modal__partner.style.display = "block";
-      };
-      span__partner.onclick = function () {
-        modal__partner.style.display = " none";
-      };
-      let modal__work = document.getElementById("modalWork");
-      let btn__work = document.getElementById("volonter");
-      let span__work = document.getElementsByClassName("close__work")[0];
-      btn__work.onclick = function () {
-        modal__work.style.display = "block";
-      };
-      span__work.onclick = function () {
-        modal__work.style.display = "none";
-      };
-      let modal__export = document.getElementById("modalExp");
-      let btn__export = document.getElementById("export");
-      let span__export = document.getElementsByClassName("close__export")[0];
-      btn__export.onclick = function () {
-        modal__export.style.display = "block";
-      };
-      span__export.onclick = function () {
-        modal__export.style.display = "none";
-      };
-      let modal = document.getElementById("myModal");
-      let btn = document.getElementById("help");
-      let span = document.getElementsByClassName("close")[0];
-      btn.onclick = function () {
-        modal.style.display = "block";
-      };
-      span.onclick = function () {
-        modal.style.display = "none";
-      };
-      window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-        if (event.target == modal__export) {
-          modal__export.style.display = "none";
-        }
-        if (event.target == modal__work) {
-          modal__work.style.display = "none";
-        }
-        if (event.target == modal__partner) {
-          modal__partner.style.display = "none";
-        }
-      };
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
