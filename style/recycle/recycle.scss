@@ -36,12 +36,12 @@ body {
     @media (max-width: 768px) {
         max-width: 150px;
         height: 50px;
-        font-size: .6rem;
+        font-size: 0.6rem;
     }
     @media (max-width: 480px) {
         max-width: 100px;
         height: 30px;
-        font-size: .4rem;
+        font-size: 0.4rem;
         border-radius: 8px;
     }
 }
@@ -81,7 +81,7 @@ h3 {
     font-size: 1.5rem;
     font-weight: 600;
     @media (max-width: 768px) {
-        font-size: .7rem;
+        font-size: 0.7rem;
     }
 }
 p {
@@ -90,8 +90,8 @@ p {
     font-weight: 400;
     line-height: 1.5rem;
     @media (max-width: 768px) {
-        font-size: .6rem;
-        line-height: .8rem;
+        font-size: 0.6rem;
+        line-height: 0.8rem;
     }
 }
 a {
@@ -109,7 +109,7 @@ a {
     font-weight: 600;
     border-bottom: 1px solid rgb(202, 207, 206);
     @media (max-width: 768px) {
-        font-size: .5rem;
+        font-size: 0.5rem;
         height: 17vh;
     }
     .header__logo {
@@ -181,7 +181,7 @@ a {
             font-size: 1.8rem;
             font-weight: 600;
             @media (max-width: 768px) {
-                font-size: .8rem;
+                font-size: 0.8rem;
             }
         }
     }
@@ -224,15 +224,15 @@ a {
             font-size: 1.2rem;
         }
         @media (max-width: 768px) {
-            font-size: .7rem;
+            font-size: 0.7rem;
         }
         @media (max-width: 480px) {
-            font-size: .5rem;
+            font-size: 0.5rem;
         }
     }
 }
 .recycle {
-    background-image: url('/assets/recycle/15628839_5639630.svg');
+    background-image: url('../../assets/recycle/15628839_5639630.svg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -271,8 +271,8 @@ a {
             width: 100%;
             height: auto;
             object-fit: cover;
-            gap: 0;
-            transition: transform .2s;
+            gap: 0;0
+            transition: transform 0.2s;
             @media (max-width: 1640px) {
                 max-width: 250px;
             }
@@ -307,7 +307,7 @@ a {
             height: auto;
             object-fit: cover;
             gap: 0;
-            transition: transform .2s;
+            transition: transform 0.2s;
             @media (max-width: 1640px) {
                 max-width: 250px;
             }
@@ -356,10 +356,10 @@ a {
             color: black;
             @media screen and (max-width: 768px) {
                 text-decoration: underline;
-                font-size: .75rem;
+                font-size: 0.75rem;
             } 
             @media screen and (max-width: 480px) {
-                font-size: .5rem;
+                font-size: 0.5rem;
             } 
         }
         .doc__link:hover{
@@ -383,61 +383,71 @@ a {
             text-align: center;
             font-style: inherit;
             @media screen and (max-width: 768px) {
-                font-size: 1.1rem;
-            } 
+                font-size: 1.2rem;
+                margin-bottom: 1%;
+            }
             @media screen and (max-width: 480px) {
                 margin-bottom: 2%;
-                font-size: .8rem;
+                font-size: 0.8rem;
             }
         }
         .footer__content{
             display: flex;
             flex-direction: column;
             gap:15px;
-            .icon{
-                margin-left: 5%;
-                width: 40px;
-                height: 40px;
-            }
-            .privacy-policy{
-                align-self: flex-end;
-                color: gray;
-                font-size: 1rem;
-                text-decoration: none;
-                @media screen and (max-width: 768px) {
-                    text-decoration: underline;
-                    font-size: .8rem;
-                } 
-                @media screen and (max-width: 480px) {
-                    font-size: .6rem;
-                } 
-            }
-            .privacy-policy:hover{
-                text-decoration: underline;
-            }
+            @media screen and (max-width: 480px) {
+                margin: auto;
+                gap: 5px;
+            } 
+        .icon{
+            margin-left: 5%;
+            width: 40px;
+            height: 40px;
         }
+        .privacy-policy{
+            align-self: flex-end;
+            color: gray;
+            font-size: 1rem;
+            text-decoration: none;
+            @media screen and (max-width: 768px) {
+                text-decoration: underline;
+                font-size: 0.8rem;
+                align-self: center;
+            }
+            @media screen and (max-width: 480px) {
+                font-size: 0.6rem;
+            } 
+        }
+        .privacy-policy:hover{
+            text-decoration: underline;
+        }
+    }
         .footer__contati{
             gap: 5px;
             flex-wrap: wrap;
+            @media screen and (max-width: 480px) {
+                margin: auto;
+                padding-top: 5px;
+            } 
+        }
             .adress{
                 font-size: 1rem;
                 @media screen and (max-width: 768px) {
-                    font-size: .7rem;
-                } 
+                    font-size: 0.7rem;
+                }
                 @media screen and (max-width: 480px) {
-                    font-size: .5rem;
+                    font-size: 0.5rem;
                 } 
-                .adress__link {
+                .adress__link{
                     @media screen and (max-width: 768px) {
-                        font-size: .7rem;
+                        font-size: 0.7rem;
                     } 
                     @media screen and (max-width: 480px) {
-                        font-size: .5rem;
+                        font-size: 0.5rem;
                     } 
                 }
             }
         }
-    }
 }
 .modal{
     display: none;

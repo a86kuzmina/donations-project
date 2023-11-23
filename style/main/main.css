@@ -179,7 +179,7 @@ a {
   min-height: 70vh;
   height: -moz-fit-content;
   height: fit-content;
-  background-image: url("/assets/main/12178789_4907879.svg");
+  background-image: url("../../assets/main/12178789_4907879.svg");
   background-size: 75%;
   background-repeat: no-repeat;
   background-position: top right;
@@ -305,6 +305,18 @@ a {
 .rules .rules__grcards .rules__card .rules__card-title {
   padding-bottom: 5%;
 }
+.rules .rules__grcards .rules__card .rules__card-bullet {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+@media (max-width: 768px) {
+  .rules .rules__grcards .rules__card .rules__card-bullet {
+    font-size: 0.6rem;
+    line-height: 0.8rem;
+  }
+}
 .rules .rules__btn {
   margin: 3%;
   background-color: rgb(52, 129, 132);
@@ -318,7 +330,7 @@ a {
 .rules::before {
   content: "";
   position: absolute;
-  background-image: url("/assets/main/12234005_4886286.svg"), url("/assets/main/4883003.jpg");
+  background-image: url("../../assets/main/12234005_4886286.svg"), url("../../assets/main/4883003.jpg");
   opacity: 0.3;
   background-size: 25%;
   background-repeat: no-repeat;
@@ -488,7 +500,7 @@ a {
 }
 
 .smi {
-  background-image: url(/assets/main/3759828_76254v.jpg), url(/assets/main/3759828_76254h.jpg);
+  background-image: url("../../assets/main/3759828_76254v.jpg"), url("../../assets/main/3759828_76254h.jpg");
   background-size: contain;
   background-position: left, right;
   background-repeat: no-repeat;
@@ -673,6 +685,12 @@ a {
   flex-direction: column;
   gap: 15px;
 }
+@media screen and (max-width: 480px) {
+  .footer .footer__container .footer__content {
+    margin: auto;
+    gap: 5px;
+  }
+}
 .footer .footer__container .footer__content .icon {
   margin-left: 5%;
   width: 40px;
@@ -688,6 +706,7 @@ a {
   .footer .footer__container .footer__content .privacy-policy {
     text-decoration: underline;
     font-size: 0.8rem;
+    align-self: center;
   }
 }
 @media screen and (max-width: 480px) {
@@ -701,6 +720,12 @@ a {
 .footer .footer__container .footer__contati {
   gap: 5px;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 480px) {
+  .footer .footer__container .footer__contati {
+    margin: auto;
+    padding-top: 5px;
+  }
 }
 .footer .footer__container .adress {
   font-size: 1rem;
