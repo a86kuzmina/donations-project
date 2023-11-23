@@ -278,7 +278,7 @@ a {
 }
 
 .recycle {
-  background-image: url("/assets/recycle/15628839_5639630.svg");
+  background-image: url("../../assets/recycle/15628839_5639630.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -456,7 +456,8 @@ a {
 }
 @media screen and (max-width: 768px) {
   .footer .footer__container .footer__title {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    margin-bottom: 1%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -469,6 +470,12 @@ a {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+@media screen and (max-width: 480px) {
+  .footer .footer__container .footer__content {
+    margin: auto;
+    gap: 5px;
+  }
 }
 .footer .footer__container .footer__content .icon {
   margin-left: 5%;
@@ -485,6 +492,7 @@ a {
   .footer .footer__container .footer__content .privacy-policy {
     text-decoration: underline;
     font-size: 0.8rem;
+    align-self: center;
   }
 }
 @media screen and (max-width: 480px) {
@@ -499,26 +507,32 @@ a {
   gap: 5px;
   flex-wrap: wrap;
 }
-.footer .footer__container .footer__contati .adress {
+@media screen and (max-width: 480px) {
+  .footer .footer__container .footer__contati {
+    margin: auto;
+    padding-top: 5px;
+  }
+}
+.footer .footer__container .adress {
   font-size: 1rem;
 }
 @media screen and (max-width: 768px) {
-  .footer .footer__container .footer__contati .adress {
+  .footer .footer__container .adress {
     font-size: 0.7rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .footer .footer__container .footer__contati .adress {
+  .footer .footer__container .adress {
     font-size: 0.5rem;
   }
 }
 @media screen and (max-width: 768px) {
-  .footer .footer__container .footer__contati .adress .adress__link {
+  .footer .footer__container .adress .adress__link {
     font-size: 0.7rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .footer .footer__container .footer__contati .adress .adress__link {
+  .footer .footer__container .adress .adress__link {
     font-size: 0.5rem;
   }
 }

@@ -251,6 +251,12 @@ a {
   flex-direction: column;
   gap: 15px;
 }
+@media screen and (max-width: 480px) {
+  .footer .footer__container .footer__content {
+    margin: auto;
+    gap: 5px;
+  }
+}
 .footer .footer__container .footer__content .icon {
   margin-left: 5%;
   width: 40px;
@@ -266,6 +272,7 @@ a {
   .footer .footer__container .footer__content .privacy-policy {
     text-decoration: underline;
     font-size: 0.8rem;
+    align-self: center;
   }
 }
 @media screen and (max-width: 480px) {
@@ -280,12 +287,17 @@ a {
   gap: 5px;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 480px) {
+  .footer .footer__container .footer__contati {
+    margin: auto;
+    padding-top: 5px;
+  }
+}
 .footer .footer__container .adress {
   font-size: 1rem;
 }
 @media screen and (max-width: 768px) {
   .footer .footer__container .adress {
-    text-decoration: underline;
     font-size: 0.7rem;
   }
 }
